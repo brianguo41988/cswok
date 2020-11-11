@@ -1,0 +1,22 @@
+{
+  "name": "cswok-main",
+  "version": "1.0.0",
+  "description": "COMP 426 Group Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brianguo41988/cswok.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brianguo41988/cswok/issues"
+  },
+  "homepage": "https://github.com/brianguo41988/cswok#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.13"
+  }
+}
