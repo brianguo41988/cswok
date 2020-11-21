@@ -15,10 +15,9 @@ app.get('/menu', (req, res) => {
     return;
 });
 
-app.get('/index', (req, res) => {
-    res.json("hi");
-    return;
-});
+anoapp.get('/', function (req, res) {
+    res.sendfile(__dirname + '/index.html');
+  });
 
 app.get('/menu/:id', (req, res) => {
     let x = Item.findByID(req.params.id);
