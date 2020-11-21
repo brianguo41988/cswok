@@ -15,7 +15,7 @@ app.get('/menu', (req, res) => {
     return;
 });
 
-anoapp.get('/', function (req, res) {
+app.get('/', function (req, res) {
     res.sendfile(__dirname + '/index.html');
   });
 
