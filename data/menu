@@ -1,0 +1,12 @@
+{
+  "1": {
+    "id": 1,
+    "name": "Added manually",
+    "price": 3.5,
+  },
+  "2": {
+    "id": 2,
+    "name": "A book created by post",
+    "price": 2.5,
+  }
+}
