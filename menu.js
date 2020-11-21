@@ -18,15 +18,17 @@ class Menu {
 }
 
 Menu.getAllIDs = () => {
-    return Object.keys(Menu_data.data).map((id => {return parseInt(id);}));
+    // Return an array of item ids
+    return Object.keys(menu_data.data).map((id => {return parseInt(id);}));
 }
 
 Menu.findByID = (id) => {
     let mdata = menu_data.get(id);
     if (mdata != null) {
-        return new Menu(mdata.id, mdata.name, bdata.price);
+        return new Menu(mdata.id, mdata.name, mdata.price);
     }
     return null;
+    // return menu_data.get(id);
 }
 
 Menu.next_id = Menu.getAllIDs().reduce((max, next_id) => {
@@ -39,13 +41,13 @@ Menu.next_id = Menu.getAllIDs().reduce((max, next_id) => {
 Menu.create = (name, price) => {
     let id = Menu.next_id;
     Menu.next_id += 1;
-    let b = new Book(id, name, price);
-    menu_data.set(m.id.toString(), b);
+    let m = new Menu(id, name, price);
+    menu_data.set(m.id.toString(), m);
     return m;
 }
 
 //let b1 = new Book(0, "My First Book", 10.50, ['Ketan Mayer-Patel', 'Maitray Patel']);
 //book_data.set(b1.id.toString(), b1);
-
+// let m1 = new Menu (0, "eggrolls", 1.20);
+// menu_data.set(m1.id.toString(), m1);
 module.exports = Menu;
-

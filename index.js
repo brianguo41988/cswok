@@ -1,3 +1,5 @@
+console.log("registeresd");
+
 const express = require('express');
 
 const app = express();
@@ -5,6 +7,7 @@ const app = express();
 const Item = require('./menu.js');
 
 const bodyParser = require('body-parser');
+
 app.use(bodyParser.json());
 
 app.get('/menu', (req, res) => {
@@ -22,14 +25,14 @@ app.get('/menu/:id', (req, res) => {
 } );
 
 app.post('/menu', (req, res)=> {
-    let {title, price} = req.body;
+    let {name, price} = req.body;
 
-    let m = Item.create(title, price);
+    let m = Item.create(name, price);
     if (m == null) {
         res.status(400).send("Bad Request");
         return;
     }
-    return res.json(b);
+    return res.json(m);
 });
 
 app.put('/menu/:id', (req, res) => {
@@ -61,3 +64,4 @@ const port = 3030;
 app.listen(port, () => {
     console.log("Tutorial1 up and running on port " + port);
 });
+

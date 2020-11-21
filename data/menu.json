@@ -1,0 +1,12 @@
+{
+  "0": {
+    "id": 0,
+    "name": "manual add 0",
+    "price": 1.2
+  },
+  "2": {
+    "id": 2,
+    "name": "manual add 2",
+    "price": 1.2
+  }
+}
