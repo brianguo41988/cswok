@@ -1,50 +1,63 @@
-const menu_data = require('data-store')({ path: process.cwd() + '/data/menu.json' });
+const express = require('express');
 
-class Menu {
+const app = express();
 
-    constructor (id, name, price) {
-        this.id = id;
-        this.name = name;
-        this.price = price;
+const Item = require('./menu.js');
+
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
+
+app.get('/menu', (req, res) => {
+    res.json(Item.getAllIDs());
+    return;
+});
+
+app.get('/menu/:id', (req, res) => {
+    let x = Item.findByID(req.params.id);
+    if (x == null) {
+        res.status(404).send("Item not found");
+        return;
+    }
+    res.json(x);
+} );
+
+app.post('/menu', (req, res)=> {
+    let {title, price} = req.body;
+
+    let m = Item.create(title, price);
+    if (m == null) {
+        res.status(400).send("Bad Request");
+        return;
+    }
+    return res.json(b);
+});
+
+app.put('/menu/:id', (req, res) => {
+    let b = Item.findByID(req.params.id);
+    if (b == null) {
+        res.status(404).send("Item not found");
+        return;
     }
 
-    update () {
-        menu_data.set(this.id.toString(), this);
+    let {name, price} = req.body;
+    b.name = name;
+    b.price = price;
+    b.update();
+
+    res.json(b);
+});
+
+app.delete('/menu/:id', (req, res) => {
+    let b = Item.findByID(req.params.id);
+    if (b == null) {
+        res.status(404).send("Item not found");
+        return;
     }
+    b.delete();
+    res.json(true);
+})
 
-    delete () {
-        menu_data.del(this.id.toString());
-    }
-}
-
-Menu.getAllIDs = () => {
-    return Object.keys(Menu_data.data).map((id => {return parseInt(id);}));
-}
-
-Menu.findByID = (id) => {
-    let mdata = menu_data.get(id);
-    if (mdata != null) {
-        return new Menu(mdata.id, mdata.name, bdata.price);
-    }
-    return null;
-}
-
-Menu.next_id = Menu.getAllIDs().reduce((max, next_id) => {
-    if (max < next_id) {
-        return next_id;
-    }
-    return max;
-}, -1) + 1;
-
-Menu.create = (name, price) => {
-    let id = Menu.next_id;
-    Menu.next_id += 1;
-    let b = new Book(id, name, price);
-    menu_data.set(m.id.toString(), b);
-    return m;
-}
-
-//let b1 = new Book(0, "My First Book", 10.50, ['Ketan Mayer-Patel', 'Maitray Patel']);
-//book_data.set(b1.id.toString(), b1);
-
-module.exports = Menu;
+const port = 3030;
+app.listen(port, () => {
+    console.log("Tutorial1 up and running on port " + port);
+});
