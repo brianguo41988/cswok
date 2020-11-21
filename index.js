@@ -15,6 +15,11 @@ app.get('/menu', (req, res) => {
     return;
 });
 
+app.get('/index', (req, res) => {
+    res.json("hi");
+    return;
+});
+
 app.get('/menu/:id', (req, res) => {
     let x = Item.findByID(req.params.id);
     if (x == null) {
