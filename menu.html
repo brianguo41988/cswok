@@ -196,8 +196,7 @@
             float: right;
             color: salmon;
             font-style: italic;
-        }
-        </style>
+        }</style>
     </head>
 
 
@@ -218,11 +217,11 @@
                     <div class="col">
                         <div class="media">
                             <!--logo beside the text-->
-                            <a href="menu.html" style="color:white"> <i class="fas fa-utensils mr-3 display-4"></i> </a>
+                            <i class="fas fa-utensils mr-3 display-4"></i>
                             <!-- bootstrap media list object: -->
                             <div class="media-body">
                                 <h5 class="mt-0"> 
-                                    <a href="menu.html" style="color:white"> Menu </a> 
+                                    Menu
                                 </h5>
                                 Our delicious dishes made fresh everyday yum
                             </div>
@@ -244,11 +243,11 @@
                     <div class="col">
                         <div class="media">
                             <!--logo beside the text-->
-                            <i class="fas fa-phone mr-3 display-4"></i>
+                            <a href="contactus.html" style="color:white"> <i class="fas fa-phone mr-3 display-4"></i> </a>
                             <!-- bootstrap media list object: -->
                             <div class="media-body">
                                 <h5 class="mt-0">
-                                    Contact Us
+                                    <a href="contactus.html" style="color:white"> Contact Us </a>
                                 </h5>
                                 Questions or concerns? Welcome to contact us
                             </div>
@@ -259,44 +258,71 @@
         </div>
 
 
-        <!--Contact Us section-->
+        <!--Menu section-->
         <br>
-        <div>
-        
-        <!-- Google maps section -->    
-        <p>My Google Maps Demo</p> 
-        <div id="map" style="width:100%;height:400px;"></div> 
-        <script> 
-        function initMap() { 
-            var test= {lat: 35.9049, lng: -79.0469}; 
-            var map = new google.maps.Map(document.getElementById('map'), { 
-                zoom: 4, 
-                center: test 
-            }); 
-            var marker = new google.maps.Marker({ 
-                position: test, 
-                map: map 
-            }); 
-        } 
-        </script> 
-        <script async defer 
-        src= "https://maps.googleapis.com/maps/api/js?key=AIzaSyAuLustZnbpX65K-Hep4lYzaIKOaivasO4&callback=initMap"> 
-        </script> 
-
-
-            <br>
-            <div class="container title">
-                Contact Us
-            </div>
-
-            <!-- Google forms section -->
-            <div id="googleform">
-                <p>Give us a call at: 123-456-7890 </p>
-                <p>or use the form below for any questions or comments:</p>
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdvbyQJlD7cs1f9M1dnzt2EysHxZqZcjJWCW3JOGTYmz85HIQ/viewform?embedded=true" width="450" height="650" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <div class="wrapper">
+            <div class="title">
+                <h4>Our Menu <span>(daily fresh ingredients and foods)</span> </h4>
             </div>
             
+            <div class="menu">
+                <!-- Item 1 -->
+                <div class="single-menu">
+                    <img src="../images/Item1.jpg" alt="Item1" width="200" height="40">
+                    <div class="menu-content">
+                        <h4>Chicken and Broccoli <span>$9</span> </h4>
+                        <p> Sliced chicken breast cooked with broccoli, soy sauce, honey, hoisin sauce and other ingredients. </p>
+                        <button type="button"> add to cart </button>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="single-menu">
+                    <img src="../images/Item2.jpg" alt="Item2" width="200" height="40">
+                    <div class="menu-content">
+                        <h4>Sweet and Sour Chicken <span>$8</span> </h4>
+                        <p> Fried chicken chunks stir fried with our special sweet and sour sauce (vinegar, soy sauce, sugar, etc). </p>
+                        <button type="button"> add to cart </button>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="single-menu">
+                    <img src="../images/Item3.jpg" alt="Item3" width="200" height="40">
+                    <div class="menu-content">
+                        <h4>General Tso's Chicken <span>$9</span> </h4>
+                        <p> Sliced chicken breast cooked with hoisin sauce, soy sauce, rice vinegar, ginger, sugar, and garlic. </p>
+                        <button type="button"> add to cart </button>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="single-menu">
+                    <img src="../images/Item4.jpg" alt="Item4" width="200" height="40">
+                    <div class="menu-content">
+                        <h4>Lo Mein <span>$5</span> </h4>
+                        <p> Egg noodles stir fried with snow peas, carrots, bean sprouts, soy sauce, sesame oil, oyster sauce and garlic. </p>
+                        <button type="button"> add to cart </button>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="single-menu">
+                    <img src="../images/Item5.jpg" alt="Item5" width="200" height="40">
+                    <div class="menu-content">
+                        <h4>Stir Fried Rice <span>$5</span> </h4>
+                        <p> White rice stir fried with eggs, snow peas, carrots, soy sauce and sesame oil. </p>
+                        <button type="button"> add to cart </button>
+                    </div>
+                </div>
+                <!-- Item 6 -->
+                <div class="single-menu">
+                    <img src="../images/Item6.jpg" alt="Item6" width="200" height="40">
+                    <div class="menu-content">
+                        <h4>Egg Rolls <span>$3</span> </h4>
+                        <p> Deep fried egg rolls with flour wrapping and an inner filler of chopped cabbage, pork, shiitake mushrooms and other ingredients. </p>
+                        <button type="button"> add to cart </button>
+                    </div>
+                </div>
+            </div>
         </div>
+    
 
         <!-- home button -->
         <br>
