@@ -28,7 +28,9 @@ app.get('/', function (req, res) {
   app.get('/cart.html', function (req, res) {
     res.sendfile(__dirname + '/cart.html');
   });
-  
+  app.get('/script.js', function (req, res) {
+    res.sendfile(__dirname + '/script.js');
+  });
 app.get('/menu/:id', (req, res) => {
     let x = Item.findByID(req.params.id);
     if (x == null) {
