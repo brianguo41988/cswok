@@ -13,5 +13,20 @@
     "id": 3,
     "name": "showingdanielsomething",
     "price": 1.2
+  },
+  "4": {
+    "id": 4,
+    "name": "hello",
+    "price": 3.4
+  },
+  "5": {
+    "id": 5,
+    "name": "hello",
+    "price": 3.4
+  },
+  "6": {
+    "id": 6,
+    "name": "hello",
+    "price": 3.4
   }
 }

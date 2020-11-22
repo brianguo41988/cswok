@@ -1,4 +1,3 @@
-console.log("registeresd");
 
 const express = require('express');
 
@@ -7,6 +6,7 @@ const app = express();
 const Item = require('./menu.js');
 
 const bodyParser = require('body-parser');
+const Menu = require('./menu.js');
 
 app.use(bodyParser.json());
 
@@ -73,8 +73,8 @@ app.delete('/menu/:id', (req, res) => {
     b.delete();
     res.json(true);
 })
-
-const port = process.env.PORT || 5000;
+const port = 3000;
+// const port = process.env.PORT || 5000;
 app.listen(port, () => {
     console.log("Tutorial1 up and running on port " + port);
 });
