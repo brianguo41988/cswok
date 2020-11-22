@@ -19,6 +19,10 @@ app.get('/', function (req, res) {
     res.sendfile(__dirname + '/index.html');
   });
 
+  app.get('/contactus.html', function (req, res) {
+    res.sendfile(__dirname + '/contactus.html');
+  });
+
 app.get('/menu/:id', (req, res) => {
     let x = Item.findByID(req.params.id);
     if (x == null) {
