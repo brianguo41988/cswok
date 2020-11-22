@@ -48,7 +48,7 @@ Menu.create = (name, price) => {
 
 //let b1 = new Book(0, "My First Book", 10.50, ['Ketan Mayer-Patel', 'Maitray Patel']);
 //book_data.set(b1.id.toString(), b1);
-let m1 = new Menu (7, "addded", 1.20);
-menu_data.set(m1.id.toString(), m1);
-// console.log("hello");
+// let m1 = new Menu (8, "addded", 1.20);
+// menu_data.set(m1.id.toString(), m1);
+console.log("hello");
 module.exports = Menu;
