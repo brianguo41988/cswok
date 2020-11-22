@@ -64,11 +64,11 @@
                     <div class="col">
                         <div class="media">
                             <!--logo beside the text-->
-                            <a href="contactus.html" style="color:white"> <i class="fas fa-phone mr-3 display-4"></i> </a>
+                            <i class="fas fa-phone mr-3 display-4"></i>
                             <!-- bootstrap media list object: -->
                             <div class="media-body">
                                 <h5 class="mt-0">
-                                    <a href="contactus.html" style="color:white"> Contact Us </a>
+                                    Contact Us
                                 </h5>
                                 Questions or concerns? Welcome to contact us
                             </div>
@@ -79,72 +79,48 @@
         </div>
 
 
-        <!--About section-->
-        <div class="wrapper">
-            <div class="about-title">
-                <h1> About Us </h1>
-            </div>
-            <div class="about-section">
-                <h5> Dating back to Chapel Hill, NC, three young computer science students were inspired by Asian restaurants such as Panda Express and Pei Wei.
-                Starting from a small local business, CSWok has grown to become a global phenomenon that has taken millenials by storm.
-                Our dishes are highly rated, receiving phrases from local communities to well known celebrities like Nicki Minaj and Ryan Reynolds.
-                Additionally, all our ingredients are locally grown and dishes made fresh everyday! </h3>
-            </div>
-            <br>
-            <img src="../images/PeopleEating.jpg" alt="PeopleEating" class="center">
-        </div>
+        <!--Contact Us section-->
+        <br>
+        <div>
         
+        <!-- Google maps section -->    
+        <p>My Google Maps Demo</p> 
+        <div id="map" style="width:100%;height:400px;"></div> 
+        <script> 
+        function initMap() { 
+            var test= {lat: 35.9049, lng: -79.0469}; 
+            var map = new google.maps.Map(document.getElementById('map'), { 
+                zoom: 4, 
+                center: test 
+            }); 
+            var marker = new google.maps.Marker({ 
+                position: test, 
+                map: map 
+            }); 
+        } 
+        </script> 
+        <script async defer 
+        src= "https://maps.googleapis.com/maps/api/js?key=AIzaSyAuLustZnbpX65K-Hep4lYzaIKOaivasO4&callback=initMap"> 
+        </script> 
 
-        <!-- Team Descriptions Section -->
-        <div class="team-section">
-            <h1>Our Team</h1>
-            <p>Meet these handsome, intelligent, young men who founded the revolutionary CSWok.</p>
-          </div>
-          
-          <div class="column">
-              <div class="card">
-                <img src="../images/BleachHitsugaya.png" alt="Hitsugaya" style="width:100%">
-                <!-- team member 3 -->
-                <div class="description">
-                  <h2>Daniel Liu</h2>
-                  <p class="descriptiontitle">Co-Founder, Front-End Developer</p>
-                  <p>Daniel is hybrid koreaboo/weeb (I know how basic can you be?) who has a constant sweet tooth and his dentist hates him.</p>
-                  <p><button class="button">Contact</button></p>
-                </div>
-              </div>
+
+            <br>
+            <div class="container title">
+                Contact Us
             </div>
 
-            <div class="column">
-              <div class="card">
-                <img src="../images/BleachByakuya.jpg" alt="Byakuya" style="width:100%">
-                <!-- team member 2 -->
-                <div class="description">
-                  <h2>Brian Guo</h2>
-                  <p class="descriptiontitle">Co-Founder, Back-End Developer</p>
-                  <p>Brian is a self proclaimed weeb who enjoys the mountain views and Spotify Premium. I dare you to name an anime he hasn't watched.</p>
-                  <p><button class="button">Contact</button></p>
-                </div>
-              </div>
+            <!-- Google forms section -->
+            <div id="googleform">
+                <p>Give us a call at: 123-456-7890 </p>
+                <p>or use the form below for any questions or comments:</p>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdvbyQJlD7cs1f9M1dnzt2EysHxZqZcjJWCW3JOGTYmz85HIQ/viewform?embedded=true" width="450" height="650" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
-
-          <div class="row">
-            <div class="column">
-              <div class="card">
-                <img src="../images/BleachUrahara.jpg" alt="Urahara" style="width:100%">
-                <!-- team member 1 -->
-                <div class="description">
-                  <h2>Riis Widner</h2>
-                  <p class="descriptiontitle">Co-Founder, Back-End Developer</p>
-                  <p>Riis is a gym enthusiast who loves Asian food. Don't get on his wrong side or else you'll be messing with Mr.Thick Thighs.</p>
-                  <p><button class="button">Contact</button></p>
-                </div>
-              </div>
-            </div>
-          
             
-          
-          </div>
+        </div>
 
+        <!-- home button -->
+        <br>
+        <a href="index.html" class="button"> Back to Home Page </a>
     </body>
 
 </html>
