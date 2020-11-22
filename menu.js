@@ -1,5 +1,4 @@
 const menu_data = require('data-store')({ path: process.cwd() + '/data/menu.json' });
-
 class Menu {
 
     constructor (id, name, price) {
@@ -48,6 +47,6 @@ Menu.create = (name, price) => {
 
 //let b1 = new Book(0, "My First Book", 10.50, ['Ketan Mayer-Patel', 'Maitray Patel']);
 //book_data.set(b1.id.toString(), b1);
-// let m1 = new Menu (0, "eggrolls", 1.20);
-// menu_data.set(m1.id.toString(), m1);
+let m1 = new Menu (0, "eggrolls", 1.20);
+menu_data.set(m1.id.toString(), m1);
 module.exports = Menu;
