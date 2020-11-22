@@ -3,19 +3,330 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CS Wok</title>
-        <script src = "index.js"></script>
-        <style>
-        h1 {
-            color: maroon;
-            margin-left: 40px;
-          } 
-          </style>
+        
+        <!-- Link to Bulma CSS -->
+        <link rel='stylesheet' href="bulma/css/bulma.css">
+
+         <!-- Link to Bootstrap 4 CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+        <!-- a Google font -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
+
+        <!-- FontAwesome for search icon -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
+        <!-- own css -->
+        <link rel="stylesheet" href="custom_style.css" />
+        <style>.bannertitle{
+            color: white;
+        }
+        .big-banner {
+            background-image: url('../images/Dumplings.jpg');
+            background-size: 100%
+        }
+        .tabs-background{
+            background: linear-gradient(to right, #6e1a52,  #ec5252 );
+        }
+        
+        #googlemaps{
+          align-content: center;
+          text-align: center;
+          color: darkgray;
+        }
+        #googleform{
+            align-content: center;
+            text-align: center;
+        }
+        .about-title {
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: grey;
+        }
+        .about-section {
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(82, 81, 81);
+        }
+        
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+          }
+          html {
+            box-sizing: border-box;
+          }
+          *, *:before, *:after {
+            box-sizing: inherit;
+          }
+          .column {
+            float: left;
+            width: 33.3%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+          }
+          .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+          }
+          .team-section {
+            padding: 30px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+          }
+          .container {
+            padding: 0 16px;
+          }
+            .container::after, .row::after {
+            content: "";
+            clear: both;
+            display: table;
+          }
+          .description {
+            padding: 0 16px;
+            text-align: center;
+          }
+          .descriptiontitle {
+            color: grey;
+            font-size: 2ch;
+          }
+          .title {
+            color: grey;
+          }
+          .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: grey;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+          }
+          .button:hover {
+            background-color: #555;
+          }
+          @media screen and (max-width: 650px) {
+            .column {
+              width: 100%;
+              display: block;
+            }
+        }
+        
+        
+          .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+          }
+        
+        
+        .wrapper {
+            width: 1200px;
+            margin: 50px auto;
+            background-color: whitesmoke;
+        }
+        .title {
+            text-align: center;
+            margin-bottom: 60px
+        }
+        .title h4 {
+            text-transform: capitalize;
+            font-size: 36px;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .title h4 span {
+            display: block;
+            font-size: 18px;
+            font-style: italic;
+            margin-bottom: -10px;
+        }
+        .title h4:before{
+            position: absolute;
+            content: "";
+            width: 100px;
+            height: 2px;
+            background-color: salmon;
+            bottom: -1ch;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .single-menu{
+            flex-basis: 580px;
+            margin-top: 15px;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-right: 1ch;
+        }
+        .single-menu:nth-child(5), .single-menu:nth-child(6) {
+            border-bottom:0;
+        }
+        .single-menu {
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        .single-menu img {
+            max-width: 180px;
+            margin-right: 30px;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+            padding: 3px;
+        }
+        .single-menu h4 {
+            text-transform: capitalize;
+            font-size: 22px;
+            border-bottom: 1px dashed #333;
+            margin-bottom: 5px;
+            padding-bottom: 5px;
+        }
+        .single-menu h4 span {
+            float: right;
+            color: salmon;
+            font-style: italic;
+        }</style>
     </head>
 
 
     <body>
-        <h1> test </h1>
+        
+        <!--this is for the banner picture background-->
+        <div class="jumbostron big-banner mb-0" style="height: 350px; padding-top: 150px;">
+            <div class="container">
+                <h1 class="bannertitle text-white"> CS Wok </h1>
+                <h2 class="subtitle text-white"> "Best Taste in Town" </h2>
+            </div>
+        </div>
 
+        <!--this is for the 3 tabs-->
+        <div class="tabs-background text-light py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="media">
+                            <!--logo beside the text-->
+                            <i class="fas fa-utensils mr-3 display-4"></i>
+                            <!-- bootstrap media list object: -->
+                            <div class="media-body">
+                                <h5 class="mt-0"> 
+                                    Menu
+                                </h5>
+                                Our delicious dishes made fresh everyday yum
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="media">
+                            <!--logo beside the text-->
+                            <a href="cart.html" style="color:white"> <i class="fas fa-cart-arrow-down mr-3 display-4"></i> </a>
+                            <!-- bootstrap media list object: -->
+                            <div class="media-body">
+                                <h5 class="mt-0">
+                                    <a href="cart.html" style="color:white"> Cart </a>
+                                </h5>
+                                Easily access your shopping cart and make payments
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="media">
+                            <!--logo beside the text-->
+                            <a href="contactus.html" style="color:white"> <i class="fas fa-phone mr-3 display-4"></i> </a>
+                            <!-- bootstrap media list object: -->
+                            <div class="media-body">
+                                <h5 class="mt-0">
+                                    <a href="contactus.html" style="color:white"> Contact Us </a>
+                                </h5>
+                                Questions or concerns? Welcome to contact us
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Menu section-->
+        <br>
+        <div class="wrapper">
+            <div class="title">
+                <h4>Our Menu <span>(daily fresh ingredients and foods)</span> </h4>
+            </div>
+            
+            <div class="menu">
+                <!-- Item 1 -->
+                <div class="single-menu">
+                    <img src="../images/Item1.jpg" alt="Item1" width="200" height="40">
+                    <div class="menu-content">
+                        <h4>Chicken and Broccoli <span>$9</span> </h4>
+                        <p> Sliced chicken breast cooked with broccoli, soy sauce, honey, hoisin sauce and other ingredients. </p>
+                        <button type="button"> add to cart </button>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="single-menu">
+                    <img src="../images/Item2.jpg" alt="Item2" width="200" height="40">
+                    <div class="menu-content">
+                        <h4>Sweet and Sour Chicken <span>$8</span> </h4>
+                        <p> Fried chicken chunks stir fried with our special sweet and sour sauce (vinegar, soy sauce, sugar, etc). </p>
+                        <button type="button"> add to cart </button>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="single-menu">
+                    <img src="../images/Item3.jpg" alt="Item3" width="200" height="40">
+                    <div class="menu-content">
+                        <h4>General Tso's Chicken <span>$9</span> </h4>
+                        <p> Sliced chicken breast cooked with hoisin sauce, soy sauce, rice vinegar, ginger, sugar, and garlic. </p>
+                        <button type="button"> add to cart </button>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="single-menu">
+                    <img src="../images/Item4.jpg" alt="Item4" width="200" height="40">
+                    <div class="menu-content">
+                        <h4>Lo Mein <span>$5</span> </h4>
+                        <p> Egg noodles stir fried with snow peas, carrots, bean sprouts, soy sauce, sesame oil, oyster sauce and garlic. </p>
+                        <button type="button"> add to cart </button>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="single-menu">
+                    <img src="../images/Item5.jpg" alt="Item5" width="200" height="40">
+                    <div class="menu-content">
+                        <h4>Stir Fried Rice <span>$5</span> </h4>
+                        <p> White rice stir fried with eggs, snow peas, carrots, soy sauce and sesame oil. </p>
+                        <button type="button"> add to cart </button>
+                    </div>
+                </div>
+                <!-- Item 6 -->
+                <div class="single-menu">
+                    <img src="../images/Item6.jpg" alt="Item6" width="200" height="40">
+                    <div class="menu-content">
+                        <h4>Egg Rolls <span>$3</span> </h4>
+                        <p> Deep fried egg rolls with flour wrapping and an inner filler of chopped cabbage, pork, shiitake mushrooms and other ingredients. </p>
+                        <button type="button"> add to cart </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <!-- home button -->
+        <br>
+        <a href="index.html" class="button"> Back to Home Page </a>
     </body>
 
 </html>
