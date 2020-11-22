@@ -1,32 +1,17 @@
 {
   "0": {
     "id": 0,
-    "name": "eggrolls",
+    "name": "hello0",
+    "price": 1.2
+  },
+  "1": {
+    "id": 1,
+    "name": "hello1",
     "price": 1.2
   },
   "2": {
     "id": 2,
-    "name": "manual add 2",
+    "name": "hello2",
     "price": 1.2
-  },
-  "3": {
-    "id": 3,
-    "name": "showingdanielsomething",
-    "price": 1.2
-  },
-  "4": {
-    "id": 4,
-    "name": "hello",
-    "price": 3.4
-  },
-  "5": {
-    "id": 5,
-    "name": "hello",
-    "price": 3.4
-  },
-  "6": {
-    "id": 6,
-    "name": "hello",
-    "price": 3.4
   }
-}
+}      
