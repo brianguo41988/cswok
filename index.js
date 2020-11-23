@@ -42,6 +42,9 @@ app.get('/action_page.php', function (req, res) {
   app.get('/script.js', function (req, res) {
     res.sendfile(__dirname + '/script.js');
   });
+  app.get('/autocomplete.js', function (req, res) {
+    res.sendfile(__dirname + '/autocomplete.js');
+  });
 app.get('/menu/:id', (req, res) => {
     let x = Item.findByID(req.params.id);
     if (x == null) {
