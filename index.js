@@ -11,12 +11,12 @@ const Menu = require('./menu.js');
 app.use(bodyParser.json());
 
 app.get('/menu', (req, res) => {
-    let arr = [];
-    let x = Item.findByID(req.params.id);
+    res.json(Item.getAllIDs());
     return;
 });
 app.get('/menu2', (req, res) => {
-    res.json(Item.getAllNames());
+    console.log(menu_data.length())
+    res.json(menu_data.length);
     return;
 });
 app.get('/', function (req, res) {
