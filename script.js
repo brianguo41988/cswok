@@ -5,6 +5,7 @@ async function fn1() {
         // url: 'http://localhost:3030/menu',
         withCredentials: true,
       });
+      console.log("entered");
       for (let i = 0; i < result.data.length; i++){
           console.log(result.data[i].name);
       }
