@@ -54,6 +54,7 @@ async function refreshCart(){
         withCredentials: true,	
     });	
     if (result2.data.menu == true){
+      console.log(result2.data.name);
         if (result2.data.name == "Chicken Broccoli"){
             $('#cartRoot').append(` <!--Item 1 Section:-->
             <div class="row mb-4" id = "item${i}">
