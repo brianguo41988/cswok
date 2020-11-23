@@ -23,7 +23,7 @@ Menu.getAllIDs = () => {
 }
 Menu.getAllNames = () => {
     // Return an array of item ids
-    return Object.keys(menu_data.data).map((id => {return id}));
+    return Object.keys(menu_data.data).map((id => {return id.name}));
 }
 
 Menu.findByID = (id) => {
