@@ -12,6 +12,7 @@ async function replySubmit(number){
 }
 
 async function fn1() {
+    console.log("entered fn1");
     const result = await axios({
                 method: 'get',
                 url: 'https://cswok.herokuapp.com/menu',
@@ -23,7 +24,7 @@ async function fn1() {
             url: `https://cswok.herokuapp.com/menu${i}`,
             withCredentials: true,	
           });	
-          console.log(result);
+          console.log(result2);
     }
 }
 
