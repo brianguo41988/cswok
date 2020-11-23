@@ -27,6 +27,15 @@ async function fn1() {
     }
 }
 
+
+  async function deleteFn(number){
+    // const result = await axios({
+    //   method: 'delete',
+    //   url: `https://cswok.herokuapp.com/menu/0`,
+    //   withCredentials: true,
+    // });
+    console.log(number);
+  }
 async function refreshCart(){
     $('#cartRoot').remove();
     $('#ogCartRoot').append(`<div class="card-body" id = "cartRoot"></div>`);
@@ -46,7 +55,7 @@ async function refreshCart(){
     if (result2.data.menu == true){
         if (result2.data.name == "Chicken Broccoli"){
             $('#cartRoot').append(` <!--Item 1 Section:-->
-            <div class="row mb-4">
+            <div class="row mb-4" id = "item${i}">
               <div class="col-md-5 col-lg-3 col-xl-3">
                 <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
                   <!--Item 1 Image-->
@@ -84,7 +93,7 @@ async function refreshCart(){
                     <div>
                       <!--can get rid of?: remove item-->
                       <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i
-                          class="fas fa-trash-alt mr-1"></i> Remove item?? </a>
+                          class="fas fa-trash-alt mr-1" onClick = "removeFn(${i})"></i> Remove item?? </a>
                     </div>
                     <!--Price of item(s)-->
                     <p class="mb-0"><span><strong>$17.99</strong></span></p>
