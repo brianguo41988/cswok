@@ -22,3 +22,16 @@ var urlString = window.location.href;
 console.log(urlString);
 urlParams = parseURLParams(urlString);
 console.log(urlParams);
+console.log(urlParams.myCountry)
+
+if (urlParams.myCountry === "chicken and Broccoli") {
+    $('#searchRoot').append(`<div class="single-menu">
+    <img src="https://static.toiimg.com/photo/msid-67586673/67586673.jpg?3918697" alt="Item1" width="200" height="40">
+    <div class="menu-content">
+        <h4>Chicken and Broccoli <span>$9</span> </h4>
+        <p> Sliced chicken breast cooked with broccoli, soy sauce, honey, hoisin sauce and other ingredients. </p>
+        <button type="submit" onClick = "postFn(9, 'Chicken Broccoli')"> add to cart </button>
+    </div>
+</div>`)
+}
+
