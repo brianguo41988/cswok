@@ -42,7 +42,7 @@ if (urlParams.myCountry[0] == "Chicken and Broccoli") {
                         <button type="submit" onClick = "postFn(9, 'General Tsos Chicken')"> add to cart </button>
                     </div>
                 </div>`);
-}else if (urlParams.myCountry[0] == "Sweet Sour Chicken") {
+}else if (urlParams.myCountry[0] == "Sweet and Sour Chicken") {
     $('#searchRoot').append(`<div class="single-menu">
                     <img src="https://lh3.googleusercontent.com/pw/ACtC-3ceRRuuBqpz-rTFs8XTKDXyzFAXpM4RjlrTkoTps_EYq4sL0MAm0xSmPwBzNmyEolrFAqOBfS6Rm6MdKoJMjdfaLqejhLABUtLrHnf5bCwtDoOjBobWBw5DKZhbpLxOuIkponiVRznRh6BV3nIJoHWJ=s794-no?authuser=0" alt="Item2" width="200" height="40">
                     <div class="menu-content">
