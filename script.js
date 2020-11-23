@@ -137,15 +137,15 @@ Tax:
 clearCart();
 }
 async function finishFn(){
-//   $('#cardBody').remove();
-//   $('#upperCardBody').append(`<div class="card-body" id = "cardBody">
-//   <!--checkout button-->
-//   <div id = "checkoutButtonId"></div>
-//   <button type="submit" class="btn btn-primary btn-block waves-effect waves-light" onClick = "checkoutFn()" id = "checkOutButton">checkout</button>
+  $('#cardBody').remove();
+  $('#upperCardBody').append(`<div class="card-body" id = "cardBody">
+  <!--checkout button-->
+  <div id = "checkoutButtonId"></div>
+  <button type="submit" class="btn btn-primary btn-block waves-effect waves-light" onClick = "checkoutFn()" id = "checkOutButton">checkout</button>
 
-// </div>
-// </div>`);
-checkoutFn()
+</div>
+</div>`);
+
 }
 
 async function clearCart(){
