@@ -11,7 +11,7 @@ async function postFn(number, name){
       console.log(name + " has been clicked");
       if (name == "Chicken Broccoli"){
         console.log("I have entered the if");
-        $('#root').append(` <!--Item 1 Section:-->
+        $('#123456').append(` <!--Item 1 Section:-->
         <div class="row mb-4">
           <div class="col-md-5 col-lg-3 col-xl-3">
             <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
@@ -58,6 +58,7 @@ async function postFn(number, name){
             </div>
           </div>
         </div>`);
+        console.log("finished appending");
       }
 }
 
