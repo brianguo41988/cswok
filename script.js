@@ -6,7 +6,7 @@ async function postFn(number, name){
         data: {	
           "name": `${name}`,	
           "price": `${number}`,
-          "menu": true
+          "menu": 'true'
         },	
       });	
     }
