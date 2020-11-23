@@ -58,9 +58,10 @@ if (result2.data.menu == true){
 }
 let tax = total * 0.07;
 tax = tax.toFixed(2);
-console.log(tax);
+console.log(parseInt(tax));
 console.log(total);
-let ordertotal = parseInt(tax) + parseInt(total);
+console.log(tax + total);
+let ordertotal = tax + parseInt(total);
 
 $('#cardBody').append(`<h5 class="mb-3">Price Calculation</h5>
         <ul class="list-group list-group-flush">
