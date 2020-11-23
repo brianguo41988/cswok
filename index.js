@@ -12,6 +12,14 @@ app.use(bodyParser.json());
 
 app.get('/menu', (req, res) => {
     res.json(Item.getAllIDs());
+    console.log(menu_data.length + "menu length");
+    // let x = Item.findByID(req.params.id);
+    // if (x == null) {
+    //     res.status(404).send("Item not found");
+    //     return;
+    // }
+    // res.json(x);
+    // res.json(Item.getAllNames());
     return;
 });
 
