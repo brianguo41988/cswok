@@ -60,11 +60,11 @@ let tax = total * 0.07;
 tax = tax.toFixed(2);
 let ordertotal = parseFloat(tax) + parseFloat(total);
 $('#checkOutButton').replaceWith(`<button type="submit" class="btn btn-primary btn-block waves-effect waves-light" onClick = "placeOrderFn()" id = "placeOrderButton">Place Order</button>`);
-$('#cardBody').append(`<h5 class="mb-3">Price Calculation</h5>
+$('#cardBody').append(`<h5 class="mb-3">Price</h5>
         <ul class="list-group list-group-flush">
   <!--pretax amount-->
   <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-    Temporary amount:
+    Pre-tax amount:
     <span>$${total}</span>
   </li>
   <!--tax-->
@@ -80,6 +80,17 @@ $('#cardBody').append(`<h5 class="mb-3">Price Calculation</h5>
     <span><strong>$${ordertotal}</strong></span>
   </li>
 </ul>`);
+}
+
+async function placeOrderFn(){
+  $('#cardBody').remove();
+  $('#upperCardBody').append(` 
+  <div class="card-body" id = "cardBody">
+  <!--checkout button-->
+  <div id = "checkoutButtonId"></div>
+  <button type="submit" class="btn btn-primary btn-block waves-effect waves-light" onClick = "continueFn()" id = "finishButton">Finish</button>
+  </div>`);
+
 }
 async function refreshCart(){
     $('#cartRoot').remove();
