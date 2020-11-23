@@ -33,7 +33,7 @@ if (urlParams.myCountry[0] == "Chicken and Broccoli") {
         <button type="submit" onClick = "postFn(9, 'Chicken Broccoli')"> add to cart </button>
     </div>
 </div>`)
-} else if (urlParams.myCountry[0] == "General Tsos Chicken") {
+} else if (urlParams.myCountry[0] == "General Tsos chicken(Vegan)") {
     $('#searchRoot').append(`<div class="single-menu">
                     <img src="https://lh3.googleusercontent.com/pw/ACtC-3cPbWQw2z5bp_HUt8ZUpjQzIjxPWD8umJgKz-srNIFFy2OryzIZ21gl1W_-YAV3lN68yVwVxm71Y2Y6OhnTqZEqSTVUxttJPkz5Wg7QOt4TMoz7QOa2VSm4-S6qi5fND_Jl2VmMsNIkfmhYDYV5d7gH=w672-h679-no?authuser=0" alt="Item3" width="200" height="40">
                     <div class="menu-content">
@@ -60,7 +60,7 @@ if (urlParams.myCountry[0] == "Chicken and Broccoli") {
         <button type="submit" onClick = "postFn(5, 'Lo Mein')"> add to cart </button>
     </div>
 </div>`);
-}else if (urlParams.myCountry[0] == "Fried Rice") {
+}else if (urlParams.myCountry[0] == "Stir Fried Rice") {
     $('#searchRoot').append(`<div class="single-menu">
     <img src="https://lh3.googleusercontent.com/pw/ACtC-3eGPYp2L0LmdRTWXeD53iMRWnnqo0WwmG5xOvinz7VbRqaeWoLSzXPVQPO494o4Qjmis9gdtEerbXNDAFutNJ1jI_2rP5LRn0Zr0WbV0h9cKv32SOLwgMFlRRSe6MzKjuKIhbJVmSwBdcgL5XekpASS=w224-h217-no?authuser=0" alt="Item5" width="200" height="40">
     <div class="menu-content">
@@ -69,7 +69,7 @@ if (urlParams.myCountry[0] == "Chicken and Broccoli") {
         <button type="submit" onClick = "postFn(5, 'Fried Rice')"> add to cart </button>
     </div>
 </div>`);
-}else if (urlParams.myCountry[0] == "Egg Roll") {
+}else if (urlParams.myCountry[0] == "Egg Rolls") {
     $('#searchRoot').append(`<div class="single-menu">
     <img src="https://lh3.googleusercontent.com/pw/ACtC-3eegVy1vA_TY6B9u-K96pddMGMg34rCYCahpIIzvgut1Ert5oSEZ5znrVmQx-1O6ixTFlDwbsVn_Ehy9CNQ3s_mMEelhc_bjTtgCHw-P55kJU9gmVgoeLsP2qmxpBNbcrsrrxz-ZPXjknOPaiPQjWWk=w465-h423-no?authuser=0" alt="Item6" width="200" height="40">
     <div class="menu-content">
