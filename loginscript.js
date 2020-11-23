@@ -36,6 +36,6 @@ async function signUpFn(number, name){
                 }
               } 
               console.log("failed to sign in")
-              $('#loginRoot').append('<p>You do not have an account</p>')
+              $('#loginRoot').append('<p>Incorrect username or password</p>')
         }
     }
