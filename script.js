@@ -11,6 +11,22 @@ async function replySubmit(number){
       });	
 }
 
+async function fn1() {
+    const result = await axios({
+                method: 'get',
+                url: 'https://cswok.herokuapp.com/menu',
+                withCredentials: true,	
+              });	
+    for (let i = 0; i < result.length; i++){
+        const result2 = await axios({
+            method: 'get',
+            url: `https://cswok.herokuapp.com/menu${i}`,
+            withCredentials: true,	
+          });	
+          console.log(result);
+    }
+}
+
 // async function fn1() {	
 //     const result = await axios({
 //         method: 'get',
