@@ -47,13 +47,13 @@ async function refreshCart(){
         url: 'https://cswok.herokuapp.com/menu',
         withCredentials: true,	
       });	
+      // if statement here if not null
     for (let i = 0; i < result.data.length; i++){
     const result2 = await axios({
         method: 'get',
         url: `https://cswok.herokuapp.com/menu/${i}`,
         withCredentials: true,	
     });	
-    console.log("please print this out");
     if (result2.data.menu == true){
       console.log(result2.data.name);
         if (result2.data.name == "Chicken Broccoli"){
