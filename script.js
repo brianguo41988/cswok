@@ -93,7 +93,8 @@ async function refreshCart(){
                     <div>
                       <!--can get rid of?: remove item-->
                       <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i
-                          class="fas fa-trash-alt mr-1" onClick = "removeFn(${i})"></i> Remove item?? </a>
+                          class="fas fa-trash-alt mr-1")"></i> Remove item?? </a>
+                          <button type = "submit" onClick = "removeFn(${i})"> Remove </button>
                     </div>
                     <!--Price of item(s)-->
                     <p class="mb-0"><span><strong>$17.99</strong></span></p>
