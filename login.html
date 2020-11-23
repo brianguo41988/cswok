@@ -16,7 +16,7 @@
         <!-- FontAwesome for search icon -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
-        <style>
+        <!-- <style>
 
 body {
     background-image: url('https://lh3.googleusercontent.com/pw/ACtC-3dpITf_U4Lyvd0oipIVRKmPoL-Pq_VVXB9Va0r3knMRgRI8c5j1u_0M6ib9lnTU2u8zRprRKRt_V0Tt2LRfPHgRmwzTH4Uca0HSEgwEZBTcNoqcqWBJVWjEk7tUs6frud04QDnskg2VbmmeP-dRNe_G=w1423-h794-no?authuser=0');
@@ -92,7 +92,7 @@ h2.active {
 
 /* FORM TYPOGRAPHY*/
 
-input[type=button], input[type=submit]{
+input[type=button], input[type=submit], input[type=reset]  {
   background-color: #56baed;
   border: none;
   color: white;
@@ -114,11 +114,11 @@ input[type=button], input[type=submit]{
   transition: all 0.3s ease-in-out;
 }
 
-input[type=button]:hover, input[type=submit]:hover{
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
   background-color: #39ace7;
 }
 
-input[type=button]:active, input[type=submit]:active {
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
   -moz-transform: scale(0.95);
   -webkit-transform: scale(0.95);
   -o-transform: scale(0.95);
@@ -269,7 +269,7 @@ input[type=text]:placeholder {
   width:60%;
 }
 
-        </style>
+        </style> -->
     </head>
 <body>
     <div class="wrapper fadeInDown">
@@ -279,14 +279,13 @@ input[type=text]:placeholder {
           <!-- Icon -->
           <div class="fadeIn first">
           </div>
-          <div id = "loginRoot"></div>
       
           <!-- Login Form -->
           <form>
             <input type="text" id="login" class="fadeIn second" name="username" placeholder="Username">
             <input type="text" id="password" class="fadeIn third" name="password" placeholder="Password">
-            <input type="submit" id = logIn onClick = 'logInFn(document.getElementById("password").value, document.getElementById("login").value)' class="fadeIn fourth" value="Log In">
-            <input type="submit" id = signUp onClick = 'signUpFn(document.getElementById("password").value, document.getElementById("login").value)' class="fadeIn fourth" value="Sign Up">
+            <input type="submit" id = logIn onClick = 'loginFn(document.getElementById("password"), document.getElementById("login"))' class="fadeIn fourth" value="Log In">
+            <input type="submit" id = signUp class="fadeIn fourth" value="Sign Up">
           </form>
       
           <!-- Remind Passowrd -->
