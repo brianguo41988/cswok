@@ -1,4 +1,5 @@
 console.log("entered login script");
+let accountMade = false;
 async function signUpFn(number, name){
     const result = await axios({	
         method: 'post',	
@@ -10,7 +11,7 @@ async function signUpFn(number, name){
           "menu": false
         },	
       });	
-      window.location.href = `https://cswok.herokuapp.com/login.html`;
+      // window.location.href = `https://cswok.herokuapp.com/login.html`;
       $('#loginRoot').remove();
       $('#loginlogin').append('<div id = "loginRoot"></div>');
       $('#loginRoot').append('<p>Account Made! Please Log in.</p>');
