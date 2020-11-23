@@ -34,7 +34,7 @@ async function fn1() {
       url: `https://cswok.herokuapp.com/menu/0`,
       withCredentials: true,
     });
-
+  }
 async function refreshCart(){
     $('#cartRoot').remove();
     $('#ogCartRoot').append(`<div class="card-body" id = "cartRoot"></div>`);
