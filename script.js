@@ -59,7 +59,7 @@ if (result2.data.menu == true){
 let tax = total * 0.07;
 tax = tax.toFixed(2);
 let ordertotal = parseFloat(tax) + parseFloat(total);
-$('#checkOutButton').replaceWith(`<button type="submit" class="btn btn-primary btn-block waves-effect waves-light" onClick = "placeOrderFn(${ordertotal}, ${tax})" id = "placeOrderButton">Place Order</button>`);
+$('#checkOutButton').replaceWith(`<button type="submit" class="btn btn-primary btn-block waves-effect waves-light" onClick = "placeOrderFn(${ordertotal}, ${tax}, ${total})" id = "placeOrderButton">Place Order</button>`);
 $('#cardBody').append(`<h5 class="mb-3">Price</h5>
         <ul class="list-group list-group-flush">
   <!--pretax amount-->
@@ -82,7 +82,7 @@ $('#cardBody').append(`<h5 class="mb-3">Price</h5>
 </ul>`);
 }
 
-async function placeOrderFn(ordertotal, tax){
+async function placeOrderFn(ordertotal, tax, total){
   $('#cardBody').remove();
   $('#upperCardBody').append(` 
   <div class="card-body" id = "cardBody">
@@ -106,7 +106,12 @@ async function placeOrderFn(ordertotal, tax){
   $('#cardBody').append(` <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">${result2.data.name}<span>$${result2.data.price}</span></li>`);
   }
 }
-$('#cardBody').append(`<li class="list-group-item d-flex justify-content-between align-items-center px-0">
+$('#cardBody').append(`<li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+Pre-tax amount:
+<span>$${total}</span>
+</li>
+<!--tax-->
+<li class="list-group-item d-flex justify-content-between align-items-center px-0">
 Tax:
 <span>${tax}</span>
 </li>
