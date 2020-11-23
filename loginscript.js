@@ -19,6 +19,7 @@ async function signUpFn(number, name){
                     withCredentials: true,	
                   });	
         for (let i = 0; i < result.data.length; i++){
+            console.log("entered for loop");
             const result2 = await axios({
                 method: 'get',
                 url: `https://cswok.herokuapp.com/menu/${i}`,
