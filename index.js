@@ -27,6 +27,10 @@ app.get('/', function (req, res) {
     res.sendfile(__dirname + '/index.html');
   });
 
+  app.get('/login.html', function (req, res) {
+    res.sendfile(__dirname + '/login.html');
+  });
+
   app.get('/contactus.html', function (req, res) {
     res.sendfile(__dirname + '/contactus.html');
   });
