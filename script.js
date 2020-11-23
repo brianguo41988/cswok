@@ -38,48 +38,7 @@ async function fn1() {
     // console.log(number + "number");
   }
 async function checkoutFn(){
-  let total = 0;
-  const result = await axios({
-    method: 'get',
-    url: 'https://cswok.herokuapp.com/menu',
-    withCredentials: true,	
-  });	
-  // if statement here if not null
-for (let i = 0; i < result.data.length; i++){
-  // console.log(result.data[i]);
-  const result2 = await axios({
-    method: 'get',
-    url: `https://cswok.herokuapp.com/menu/${result.data[i]}`,
-    withCredentials: true,	
-});	
-if (result2.data.menu == true){
-    total += result2.data.price;
-  } 
-}
-let tax = total * 0.07;
-let ordertotal = tax + total;
-$('#cardBody').append(`<h5 class="mb-3">Price Calculation</h5>
-        
-<ul class="list-group list-group-flush">
-  <!--pretax amount-->
-  <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-    Temporary amount:
-    <span>$${total}</span>
-  </li>
-  <!--tax-->
-  <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-    Tax:
-    <span>${tax}</span>
-  </li>
-  <!--with tax anount-->
-  <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
-    <div>
-      <strong>Total amount of:</strong>
-    </div>
-    <span><strong>$${ordertotal}</strong></span>
-  </li>
-</ul>`);
-$('#checkOutButton').replaceWith(`<button type="submit" class="btn btn-primary btn-block waves-effect waves-light" onClick = "finalizeFn()" id = "checkOutButton">Finalize</button>`);
+console.log("checkoutCLicked");
 }
 async function refreshCart(){
     $('#cartRoot').remove();
