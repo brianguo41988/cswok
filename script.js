@@ -134,7 +134,7 @@ Tax:
 </div>
 <span><strong>$${ordertotal}</strong></span>
 </li>`);
-
+clearCart();
 }
 async function finishFn(){
   $('#cardBody').remove();
