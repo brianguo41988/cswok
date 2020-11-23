@@ -14,6 +14,10 @@ app.get('/menu', (req, res) => {
     res.json(Item.getAllIDs());
     return;
 });
+app.get('/action_page.php?myCountry=Chicken+and+Broccoli', function (req, res) {
+  res.sendfile(__dirname + '/chickenbroccoli.html');
+});
+
 
   app.get('/', function (req, res) {
     res.sendfile(__dirname + '/index.html');
