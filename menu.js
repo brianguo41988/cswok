@@ -30,7 +30,7 @@ Menu.getAllNames = () => {
 Menu.findByID = (id) => {
     let mdata = menu_data.get(id);
     if (mdata != null) {
-        return new Menu(mdata.id, mdata.name, mdata.price);
+        return new Menu(mdata.id, mdata.name, mdata.price, mdata.menu);
     }
     return null;
     // return menu_data.get(id);
@@ -43,10 +43,10 @@ Menu.next_id = Menu.getAllIDs().reduce((max, next_id) => {
     return max;
 }, -1) + 1;
 
-Menu.create = (name, price) => {
+Menu.create = (name, price, menu) => {
     let id = Menu.next_id;
     Menu.next_id += 1;
-    let m = new Menu(id, name, price);
+    let m = new Menu(id, name, price, menu);
     menu_data.set(m.id.toString(), m);
     return m;
 }

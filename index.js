@@ -68,7 +68,7 @@ app.put('/menu/:id', (req, res) => {
         return;
     }
 
-    let {name, price} = req.body;
+    let {name, price, menu} = req.body;
     b.name = name;
     b.price = price;
     b.menu = menu;
