@@ -48,7 +48,9 @@ async function refreshCart(){
         withCredentials: true,	
       });	
       // if statement here if not null
+      console.log(result.data.length + " length");
+      console.log(result.data);
     for (let i = 0; i < result.data.length; i++){
-      console.log(result.data[i].id);
+      console.log(result.data[i]);
     }
 }
