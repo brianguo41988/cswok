@@ -15,7 +15,7 @@ app.get('/menu', (req, res) => {
     return;
 });
 app.get('/action_page.php', function (req, res) {
-  res.sendfile(__dirname + '/chickenbroccoli.html');
+  res.sendfile(__dirname + '/chickbroccoli.html');
 });
 
 
