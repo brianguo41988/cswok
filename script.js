@@ -134,9 +134,10 @@ Tax:
 </div>
 <span><strong>$${ordertotal}</strong></span>
 </li>`);
-clearCart();
+
 }
 async function finishFn(){
+  clearCart();
   $('#cardBody').remove();
   $('#upperCardBody').append(`<div class="card-body" id = "cardBody">
   <!--checkout button-->
