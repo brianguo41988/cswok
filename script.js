@@ -53,6 +53,7 @@ async function refreshCart(){
         url: `https://cswok.herokuapp.com/menu/${i}`,
         withCredentials: true,	
     });	
+    console.log("please print this out");
     if (result2.data.menu == true){
       console.log(result2.data.name);
         if (result2.data.name == "Chicken Broccoli"){
@@ -295,7 +296,7 @@ async function refreshCart(){
                 </div>
               </div>
             </div>`);
-        }else if (result2.data.name == "Egg roll"){
+        }else if (result2.data.name == "Egg Roll"){
             $('#cartRoot').append(`<!--Item 6 Section:-->
             <hr class="mb-4">
             <div class="row mb-4">
