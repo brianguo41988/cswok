@@ -34,8 +34,8 @@ async function fn1() {
       url: `https://cswok.herokuapp.com/menu/${number}`,
       withCredentials: true,
     });
-    refreshCart();
-    console.log(number);
+    // refreshCart();
+    console.log(number + "number");
   }
 async function refreshCart(){
     $('#cartRoot').remove();
@@ -49,6 +49,6 @@ async function refreshCart(){
       });	
       // if statement here if not null
     for (let i = 0; i < result.data.length; i++){
-      console.log(result[i].data.id);
+      console.log(result.data[i].id);
     }
 }
