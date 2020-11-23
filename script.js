@@ -60,7 +60,9 @@ if (result2.data.menu == true){
 let tax = total * 0.07;
 tax = tax.toFixed(2);
 let ordertotal = parseFloat(tax) + parseFloat(total);
-$('#checkOutButton').replaceWith(`<button type="submit" class="btn btn-primary btn-block waves-effect waves-light" onClick = "placeOrderFn(${ordertotal}, ${tax}, ${total})" id = "placeOrderButton">Place Order</button>`);
+$('#cardBody').remove();
+$('#upperCardBody').append(`<div class="card-body" id = "cardBody"></div>`)
+$('#cardBody').append(`<button type="submit" class="btn btn-primary btn-block waves-effect waves-light" onClick = "placeOrderFn(${ordertotal}, ${tax}, ${total})" id = "placeOrderButton">Place Order</button>`);
 $('#cardBody').append(`<h5 class="mb-3">Price</h5>
         <ul class="list-group list-group-flush">
   <!--pretax amount-->
