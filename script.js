@@ -1,13 +1,15 @@
-// async function fn1() {
-//     const result = await axios({
-//         method: 'get',
-//         url: 'https://cswok.herokuapp.com/menu',
-//         // url: 'http://localhost:3030/menu',
-//         withCredentials: true,
-//       });
-//       console.log(result);
-//     }
-// fn1();
+async function fn1() {
+    const result = await axios({
+        method: 'get',
+        url: 'https://cswok.herokuapp.com/menu',
+        // url: 'http://localhost:3030/menu',
+        withCredentials: true,
+      });
+      for (let i = 0; i < result.data.length; i++){
+          console.log(result.data[i].name);
+      }
+    }
+fn1();
 
 
 // const Menu = require("./menu");
