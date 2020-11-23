@@ -15,8 +15,9 @@ app.get('/menu', (req, res) => {
     return;
 });
 app.get('/menutwo', (req, res) => {
-    console.log(menu_data.length())
-    res.json(menu_data.length);
+    console.log(menu_data.length());
+    // res.json(menu_data.length);
+    res.json(Item.getAllIDs());
     return;
 });
 app.get('/', function (req, res) {
