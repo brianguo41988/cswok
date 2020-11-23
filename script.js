@@ -57,11 +57,9 @@ if (result2.data.menu == true){
   } 
 }
 let tax = total * 0.07;
-// total = parseFloat(total);
-// console.log(total);
 tax = tax.toFixed(2);
 let ordertotal = parseFloat(tax) + parseFloat(total);
-
+$('#checkOutButton').replaceWith(`<button type="submit" class="btn btn-primary btn-block waves-effect waves-light" onClick = "placeOrderFn()" id = "placeOrderButton">Place Order</button>`);
 $('#cardBody').append(`<h5 class="mb-3">Price Calculation</h5>
         <ul class="list-group list-group-flush">
   <!--pretax amount-->
@@ -82,7 +80,6 @@ $('#cardBody').append(`<h5 class="mb-3">Price Calculation</h5>
     <span><strong>$${ordertotal}</strong></span>
   </li>
 </ul>`);
-$('#checkOutButton').replaceWith(`<button type="submit" class="btn btn-primary btn-block waves-effect waves-light" onClick = "placeOrderFn()" id = "placeOrderButton">Place Order</button>`);
 }
 async function refreshCart(){
     $('#cartRoot').remove();
