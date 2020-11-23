@@ -51,9 +51,9 @@ app.get('/loginscript.js', function (req, res) {
 });
 
 app.post('/menu', (req, res)=> {
-    let {name, price} = req.body;
+    let {name, price, menu} = req.body;
 
-    let m = Item.create(name, price);
+    let m = Item.create(name, price, menu);
     if (m == null) {
         res.status(400).send("Bad Request");
         return;
