@@ -29,11 +29,12 @@ async function fn1() {
 
 
   async function deleteFn(number){
-    // const result = await axios({
-    //   method: 'delete',
-    //   url: `https://cswok.herokuapp.com/menu/0`,
-    //   withCredentials: true,
-    // });
+    const result = await axios({
+      method: 'delete',
+      url: `https://cswok.herokuapp.com/menu/${number}`,
+      withCredentials: true,
+    });
+    refreshCart();
     console.log(number);
   }
 async function refreshCart(){
@@ -92,8 +93,6 @@ async function refreshCart(){
                   <div class="d-flex justify-content-between align-items-center">
                     <div>
                       <!--can get rid of?: remove item-->
-                      <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i
-                          class="fas fa-trash-alt mr-1")"></i> Remove item?? </a>
                           <button type = "submit" onClick = "deleteFn(${i})"> Remove </button>
                     </div>
                     <!--Price of item(s)-->
@@ -143,8 +142,7 @@ async function refreshCart(){
                   <div class="d-flex justify-content-between align-items-center">
                     <div>
                       <!--can get rid of?: remove item-->
-                      <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i
-                          class="fas fa-trash-alt mr-1"></i> Remove item?? </a>
+                      <button type = "submit" onClick = "deleteFn(${i})"> Remove </button>
                     </div>
                     <!--Price of item(s)-->
                     <p class="mb-0"><span><strong>$35.99</strong></span></p>
@@ -192,8 +190,7 @@ async function refreshCart(){
                   <div class="d-flex justify-content-between align-items-center">
                     <div>
                       <!--can get rid of?: remove item-->
-                      <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i
-                          class="fas fa-trash-alt mr-1"></i> Remove item?? </a>
+                      <button type = "submit" onClick = "deleteFn(${i})"> Remove </button>
                     </div>
                     <!--Price of item(s)-->
                     <p class="mb-0"><span><strong>$35.99</strong></span></p>
@@ -241,8 +238,7 @@ async function refreshCart(){
                   <div class="d-flex justify-content-between align-items-center">
                     <div>
                       <!--can get rid of?: remove item-->
-                      <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i
-                          class="fas fa-trash-alt mr-1"></i> Remove item?? </a>
+                      <button type = "submit" onClick = "deleteFn(${i})"> Remove </button>
                     </div>
                     <!--Price of item(s)-->
                     <p class="mb-0"><span><strong>$35.99</strong></span></p>
@@ -290,8 +286,7 @@ async function refreshCart(){
                   <div class="d-flex justify-content-between align-items-center">
                     <div>
                       <!--can get rid of?: remove item-->
-                      <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i
-                          class="fas fa-trash-alt mr-1"></i> Remove item?? </a>
+                      <button type = "submit" onClick = "deleteFn(${i})"> Remove </button>
                     </div>
                     <!--Price of item(s)-->
                     <p class="mb-0"><span><strong>$35.99</strong></span></p>
@@ -339,8 +334,7 @@ async function refreshCart(){
                   <div class="d-flex justify-content-between align-items-center">
                     <div>
                       <!--can get rid of?: remove item-->
-                      <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i
-                          class="fas fa-trash-alt mr-1"></i> Remove item?? </a>
+                      <button type = "submit" onClick = "deleteFn(${i})"> Remove </button>
                     </div>
                     <!--Price of item(s)-->
                     <p class="mb-0"><span><strong>$35.99</strong></span></p>
