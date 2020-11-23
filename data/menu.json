@@ -1,27 +1,3 @@
 {
-  "0": {
-    "id": 0,
-    "name": "hello0",
-    "price": 1.2
-  },
-  "1": {
-    "id": 1,
-    "name": "hello1",
-    "price": 1.2
-  },
-  "2": {
-    "id": 2,
-    "name": "hello2",
-    "price": 1.2
-  },
-  "7": {
-    "id": 7,
-    "name": "addded",
-    "price": 1.2
-  },
-  "8": {
-    "id": 8,
-    "name": "addded",
-    "price": 1.2
-  }
+
 }
