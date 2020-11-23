@@ -21,7 +21,7 @@ const result = await axios({
 }
 fn3();
 console.log("it worked?");
-async function fn2() {
+async function fn3() {
     const result = await axios({
         method: 'post',
         url: 'https://cswok.herokuapp.com/menu',
