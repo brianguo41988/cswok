@@ -20,7 +20,7 @@ app.get('/action_page.php', function (req, res) {
 
 
   app.get('/', function (req, res) {
-    res.sendfile(__dirname + '/index.html');
+    res.sendfile(__dirname + '/login.html');
   });
 
   app.get('/login.html', function (req, res) {
