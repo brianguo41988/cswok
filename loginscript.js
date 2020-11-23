@@ -10,7 +10,7 @@ async function signUpFn(number, name){
           "menu": false
         },	
       });	
-      window.location.href = `https://cswok.herokuapp.com/login`;
+      window.location.href = `https://cswok.herokuapp.com/login.html`;
     }
     async function logInFn(number, name) {
         console.log("entered fn1");
