@@ -24,11 +24,11 @@ async function signUpFn(number, name){
                 url: `https://cswok.herokuapp.com/menu/${i}`,
                 withCredentials: true,	
               });	
-              
-              if (result2.data.menu === false) {
-                if (result2.data.name === name && result2.data.price === number) {
-                    location.replace("index.html")
+              console.log(result2.data)
+              if (result2.data[i].menu === false) {
+                if (result2.data[i].name === name && result2.data[i].price === number) {
                     console.log("loged in")
+                    location.replace("index.html")
                     break
                 }
               } 
