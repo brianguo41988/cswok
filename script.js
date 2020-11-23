@@ -61,7 +61,7 @@ let tax = total * 0.07;
 tax = tax.toFixed(2);
 let ordertotal = parseFloat(tax) + parseFloat(total);
 $('#cardBody').remove();
-$('#upperCardBody').append(`<div class="card-body" id = "cardBody"></div>`)
+$('#upperCardBody').append(`<div class="card-body" id = "cardBody"></div>`);
 $('#cardBody').append(`<!--Price Caculation Section:-->
   <div class="card mb-3">
     <div class="card-body">
@@ -96,13 +96,8 @@ $('#cardBody').append(`<!--Price Caculation Section:-->
 
 async function placeOrderFn(ordertotal, tax, total){
   $('#cardBody').remove();
-  $('#upperCardBody').append(` 
-  <div class="card-body" id = "cardBody">
-  <!--checkout button-->
-  <div id = "checkoutButtonId"></div>
-  <button type="submit" class="btn btn-primary btn-block waves-effect waves-light" onClick = "finishFn()" id = "finishButton">Finish</button>
-  </div>`);
-  $('#cardBody').append(`<h5>Your order of has been placed!</h5> <h5> Please come pick it up in about 15 minutes </h5>`);
+  $('#upperCardBody').append(`<div class="card-body" id = "cardBody"></div>`)
+  $('#cardBody').append(`<div class="card mb-3"><div class="card-body"><h5 id = "boxCalc">Your order of has been placed!</h5> <h5> Please come pick it up in about 15 minutes </h5></div></div>`);
   const result = await axios({
     method: 'get',
     url: 'https://cswok.herokuapp.com/menu',
@@ -115,10 +110,10 @@ async function placeOrderFn(ordertotal, tax, total){
         withCredentials: true,	
   });	
   if (result2.data.menu == true){
-  $('#cardBody').append(` <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">${result2.data.name}<span>$${result2.data.price}</span></li>`);
+  $('#boxCalc').append(` <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">${result2.data.name}<span>$${result2.data.price}</span></li>`);
   }
 }
-$('#cardBody').append(`<li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+$('#boxCalc').append(`<li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
 Pre-tax amount:
 <span>$${total}</span>
 </li>
@@ -133,7 +128,9 @@ Tax:
   <strong>Total amount of:</strong>
 </div>
 <span><strong>$${ordertotal}</strong></span>
-</li>`);
+</li> <button type="submit" class="btn btn-primary btn-block waves-effect waves-light" onClick = "finishFn()" id = "finishButton">Finish</button>`);
+
+
 
 }
 async function finishFn(){
