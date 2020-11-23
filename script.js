@@ -53,6 +53,7 @@ async function refreshCart(){
         url: `https://cswok.herokuapp.com/menu/${i}`,
         withCredentials: true,	
     });	
+    console.log("please print this out");
     if (result2.data.menu == true){
       console.log(result2.data.name);
         if (result2.data.name == "Chicken Broccoli"){
