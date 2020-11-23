@@ -62,27 +62,39 @@ tax = tax.toFixed(2);
 let ordertotal = parseFloat(tax) + parseFloat(total);
 $('#cardBody').remove();
 $('#upperCardBody').append(`<div class="card-body" id = "cardBody"></div>`)
-$('#cardBody').append(`<button type="submit" class="btn btn-primary btn-block waves-effect waves-light" onClick = "placeOrderFn(${ordertotal}, ${tax}, ${total})" id = "placeOrderButton">Place Order</button>`);
-$('#cardBody').append(`<h5 class="mb-3">Price</h5>
-        <ul class="list-group list-group-flush">
-  <!--pretax amount-->
-  <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-    Pre-tax amount:
-    <span>$${total}</span>
-  </li>
-  <!--tax-->
-  <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-    Tax:
-    <span>${tax}</span>
-  </li>
-  <!--with tax anount-->
-  <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
-    <div>
-      <strong>Total amount of:</strong>
+$('#cardBody').append(`            <!-- Price Calculation (top right)Box Section:-->
+<div class="col-lg-4">
+
+  <!--Price Caculation Section:-->
+  <div class="card mb-3">
+    <div class="card-body">
+      <h5 class="mb-3">Price Calculation</h5>
+
+      <ul class="list-group list-group-flush">
+        <!--pretax amount-->
+        <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+          Subtotal:
+          <span>$${total}</span>
+        </li>
+        <!--tax-->
+        <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+          Tax:
+          <span>${tax}</span>
+        </li>
+        <!--with tax anount-->
+        <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+          <div>
+            <strong>Total:</strong>
+          </div>
+          <span><strong>$${ordertotal}</strong></span>
+        </li>
+      </ul>
+      <!--checkout button-->
+      <button type="submit" class="btn btn-primary btn-block waves-effect waves-light" onClick = "placeOrderFn(${ordertotal}, ${tax}, ${total})" id = "placeOrderButton">Place Order</button>
+
     </div>
-    <span><strong>$${ordertotal}</strong></span>
-  </li>
-</ul>`);
+  </div>`);
+
 }
 
 async function placeOrderFn(ordertotal, tax, total){
