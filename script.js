@@ -8,7 +8,19 @@ async function fn1() {
       console.log(result);
     }
 fn1();
-
+async function fn2() {
+const result = await axios({
+    method: 'post',
+    url: 'https://cswok.herokuapp.com/menu',
+    withCredentials: true,
+    data: {
+      "name": "Chuicke Brocili",
+      "price": 4.50
+    },
+  });
+}
+fn2();
+console.log("it worked?");
 // const Menu = require("./menu");
 
 // const Menu = require("./menu");
