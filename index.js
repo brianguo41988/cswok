@@ -17,10 +17,12 @@ app.get('/menu', (req, res) => {
 app.get('/action_page.php', function (req, res) {
   res.sendfile(__dirname + '/chickbroccoli.html');
 });
-
+app.get('/autocomplete.js', function (req, res) {
+  res.sendfile(__dirname + '/autocomplete.js');
+});
 
   app.get('/', function (req, res) {
-    res.sendfile(__dirname + '/index.html');
+    res.sendfile(__dirname + '/login.html');
   });
 
   app.get('/login.html', function (req, res) {
@@ -41,9 +43,6 @@ app.get('/action_page.php', function (req, res) {
   });
   app.get('/script.js', function (req, res) {
     res.sendfile(__dirname + '/script.js');
-  });
-  app.get('/autocomplete.js', function (req, res) {
-    res.sendfile(__dirname + '/autocomplete.js');
   });
 app.get('/menu/:id', (req, res) => {
     let x = Item.findByID(req.params.id);

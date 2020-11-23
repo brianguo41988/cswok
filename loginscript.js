@@ -31,7 +31,7 @@ async function signUpFn(number, name){
               if (result2.data.menu === false) {
                 if (result2.data.name === name && result2.data.price === number) {
                     console.log("logged in")
-                    window.location.href = `https://cswok.herokuapp.com`;
+                    window.location.href = `https://cswok.herokuapp.com/index.html`;
                     break
                 }
               } 
