@@ -5,7 +5,7 @@
         <title>CS Wok</title>
         
         <!-- Link to Bulma CSS -->
-        <!-- <link rel='stylesheet' href="bulma/css/bulma.css"> -->
+        <link rel='stylesheet' href="bulma/css/bulma.css">
 
          <!-- Link to Bootstrap 4 CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -15,188 +15,9 @@
 
         <!-- FontAwesome for search icon -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
+    
         <!-- own css -->
-        <style>
-        .bannertitle{
-            color: white;
-        }
-        .big-banner {
-            background-image: url('https://lh3.googleusercontent.com/pw/ACtC-3dpITf_U4Lyvd0oipIVRKmPoL-Pq_VVXB9Va0r3knMRgRI8c5j1u_0M6ib9lnTU2u8zRprRKRt_V0Tt2LRfPHgRmwzTH4Uca0HSEgwEZBTcNoqcqWBJVWjEk7tUs6frud04QDnskg2VbmmeP-dRNe_G=w1423-h794-no?authuser=0');
-            background-size: 100%
-        }
-        .tabs-background{
-            background: linear-gradient(to right, #6e1a52,  #ec5252 );
-        }
-        
-        #googlemaps{
-          align-content: center;
-          text-align: center;
-          color: darkgray;
-        }
-        #googleform{
-            align-content: center;
-            text-align: center;
-        }
-        .about-title {
-            text-align: center;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            color: grey;
-        }
-        .about-section {
-            text-align: center;
-            font-family: 'Times New Roman', Times, serif;
-            color: rgb(82, 81, 81);
-        }
-        
-        
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-          }
-          html {
-            box-sizing: border-box;
-          }
-          *, *:before, *:after {
-            box-sizing: inherit;
-          }
-          .column {
-            float: left;
-            width: 33.3%;
-            margin-bottom: 16px;
-            padding: 0 8px;
-          }
-          .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            margin: 8px;
-          }
-          .team-section {
-            padding: 30px;
-            text-align: center;
-            background-color: #474e5d;
-            color: white;
-          }
-          .container {
-            padding: 0 16px;
-          }
-            .container::after, .row::after {
-            content: "";
-            clear: both;
-            display: table;
-          }
-          .description {
-            padding: 0 16px;
-            text-align: center;
-          }
-          .descriptiontitle {
-            color: grey;
-            font-size: 2ch;
-          }
-          .title {
-            color: grey;
-          }
-          .button {
-            border: none;
-            outline: 0;
-            display: inline-block;
-            padding: 8px;
-            color: white;
-            background-color: grey;
-            text-align: center;
-            cursor: pointer;
-            width: 100%;
-          }
-          .button:hover {
-            background-color: #555;
-          }
-          @media screen and (max-width: 650px) {
-            .column {
-              width: 100%;
-              display: block;
-            }
-        }
-        
-        
-          .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-          }
-        
-        
-        .wrapper {
-            width: 1200px;
-            margin: 50px auto;
-            background-color: whitesmoke;
-        }
-        .title {
-            text-align: center;
-            margin-bottom: 60px
-        }
-        .title h4 {
-            text-transform: capitalize;
-            font-size: 36px;
-            position: relative;
-            display: inline-block;
-            padding-bottom: 10px;
-        }
-        .title h4 span {
-            display: block;
-            font-size: 18px;
-            font-style: italic;
-            margin-bottom: -10px;
-        }
-        .title h4:before{
-            position: absolute;
-            content: "";
-            width: 100px;
-            height: 2px;
-            background-color: salmon;
-            bottom: -1ch;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .menu {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .single-menu{
-            flex-basis: 580px;
-            margin-top: 15px;
-            margin-bottom: 30px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid #ddd;
-            padding-right: 1ch;
-        }
-        .single-menu:nth-child(5), .single-menu:nth-child(6) {
-            border-bottom:0;
-        }
-        .single-menu {
-            display:flex;
-            flex-direction: row;
-            align-items: center;
-        }
-        .single-menu img {
-            max-width: 180px;
-            margin-right: 30px;
-            border-radius: 50%;
-            border: 1px solid #ddd;
-            padding: 3px;
-        }
-        .single-menu h4 {
-            text-transform: capitalize;
-            font-size: 22px;
-            border-bottom: 1px dashed #333;
-            margin-bottom: 5px;
-            padding-bottom: 5px;
-        }
-        .single-menu h4 span {
-            float: right;
-            color: salmon;
-            font-style: italic;
-        }</style>
+        <link rel="stylesheet" href="custom_style.css" />
     </head>
 
 
@@ -256,23 +77,392 @@
                 </div>
             </div>
         </div>
+        <!--End of banner section-->
 
 
-        <!--Cart section-->
-        <br>
-        <div>
+        <!--Cart title-->
+        <br><div>
             <div class="container title">
                 Cart
             </div>
         </div>
 
 
+        <!-- Cart Section: below is code from bootstrap -->
+        <section>
+          <div class="row">
+            <div class="col-lg-8">
+              
+              <!--Food (top left)Box Section-->
+              <div class="card wish-list mb-3">
+                <div class="card-body">
+                
+                  <!--Item 1 Section:-->
+                  <div class="row mb-4">
+                    <div class="col-md-5 col-lg-3 col-xl-3">
+                      <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                        <!--Item 1 Image-->
+                        <img class="img-fluid w-100"
+                          src="https://lh3.googleusercontent.com/OYjaEMrlC5sG28qUF6rK3hQ7G2PhfTXWr1rVnIV_NnBMLF63ffDKRRolvUv4FwyT2EotzKvPU3-4WcnT4x818JIAqI82m9Qy25JzvC7ONfJg-QK5FAoP13xE-3egBnZjPHRlAQKLGibu58DwMDKHB-Pdrn0npJqylVeP6HOM2sTYSMLQP-RfC4nigiuCLEMc5q5vij-ZDrs39-wZaDjCK5R42bcE2QSVRiGlkXAvmuMQAs1-gyRRKywcHyYUDwF8ZUYhIZaUUsF821wxYEV63VNnDtzvdkI0NwQyC7kAk1ufDV-E-v85xYvbnMjJdYFePRb3btvy9sdXhlUrqTgMPcfkwX4AFuSAF7qDAd2VjHzyI2ZnfJjxvhOa0n5fBy55GqSO-jpNX8OTz7d5bUuZ5RseOjsUzbqKhTMH2IOmKp_hBY_pz-xJUC29LP3PbVWyG8LqKD0XEv3Nx-kQx1wQ9TV_XqLYFU364wTlnIcj0KWRBhLkadn5oy61bpfPG5JRqEVCycVu3Bw_SwCOXtoqed3unGLf8EXSGY-D6cSCYZ9cZnUdV8X_oS397qeiEMp3hThez077Ddd13K8-TBENgtjiIIe_VqkXFRypw2S_v6LLt_9muOCG-57CryjzgqsbosmFgtWeGzw1YVWx04NlfAFNpF1lbH1YUn6PPtgmH06M6IwbLCkNqH7sKBV9=s500-no?authuser=0" alt="Chicken and Broccoli">
+                        <a href="#!">
+                          <div class="mask waves-effect waves-light">                            
+                            <div class="mask rgba-black-slight waves-effect waves-light"></div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-7 col-lg-9 col-xl-9">
+                      <div>
+                        <div class="d-flex justify-content-between">
+                          <!--Name and characteristics-->
+                          <div>
+                            <h5>Chicken and Broccoli</h5>
+                            <p class="mb-3 text-muted text-uppercase small">Vegan: No</p>
+                            <p class="mb-2 text-muted text-uppercase small">GMO: No</p>
+                            <p class="mb-3 text-muted text-uppercase small">MSG: No</p>
+                          </div>
+                          <div>
+                            <!--number of items in cart box-->
+                            <div class="def-number-input number-input safari_only mb-0 w-100">  
+                              <input class="quantity" min="0" name="quantity" value="0" type="number">
+                            </div>
+                            <!--small text under under of items-->
+                            <small id="passwordHelpBlock" class="form-text text-muted text-center">
+                              (comes with white rice & soup of the day)
+                            </small>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <!--can get rid of?: remove item-->
+                            <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i
+                                class="fas fa-trash-alt mr-1"></i> Remove item?? </a>
+                          </div>
+                          <!--Price of item(s)-->
+                          <p class="mb-0"><span><strong>$17.99</strong></span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!--Item 2 Section:-->
+                  <hr class="mb-4">
+                  <div class="row mb-4">
+                    <div class="col-md-5 col-lg-3 col-xl-3">
+                      <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                        <!--Item 2 Image-->
+                        <img class="img-fluid w-100"
+                          src="https://lh3.googleusercontent.com/Kpfj73zeRHj8ACkFdwCEV09NEwCp-D23dLa-Vp2rv8W7nge13WyPevf6bhiY75ersLvhUmrE8MWrky8ILgrajQS-WqfiOUY29fDsZhlJiBS0hetH3RvP-ZAfclNTGL08V37CNRjLzpKYWsrAgprHlsHyTFzwrOKWdCrlbIGPELQRLi0-4o1qeAIlHlobuRHIJLsVwTpNmVR5mL0LfW_FuczPjc4ODOhPvvvLvLdpsh2s2IgKcv_Xf64ErNsv4UwDKvVn9dyvzLKR3Lv-SM5w0hcjMnT_t7BlBYnL5IZEPS5wpPJfXDs24r2hkYr0Ekf86KPIW6EgvFIaTq_mUexYSPGHNBCYcvOPDKkFLBlp8EdtVrhKF_0zlbcCV_M6AWIT5PQq-utMy3GS7jIvcAoX2KZCLkMzr1fkpHt_Wzh0Uyrkw7f_CzEwmA6rxNfXpQ1g0utUnXqq3evteFK1ltIwQO4cirDnTiPG1QerOiE_g8y3S4JndeAPIDMz71xAtsr9-C3xgxHup3Crcp_bGrv1J-OP8P96pGhVpQscsz4VcE-dapn-5Bv-WK9pG5NaUUQpr4dykjBElNJ1lArNqNzt-LjzbE4MJcCAKTx10IKuyXvMzuucC-1oSMcu2xgK7iNVyQNyoTEEJVbfVNkMMZK-e5T8oPu9Zju2ThmMA-LFTFUEeCy4AJjIwdpBiDgQ=s915-no?authuser=0" alt="Sweet and Sour Chicken">
+                        <a href="#!">
+                          <div class="mask waves-effect waves-light">
+                            <div class="mask rgba-black-slight waves-effect waves-light"></div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-7 col-lg-9 col-xl-9">
+                      <div>
+                        <div class="d-flex justify-content-between">
+                          <!--Name and characteristics-->
+                          <div>
+                            <h5>Sweet and Sour Chicken</h5>
+                            <p class="mb-3 text-muted text-uppercase small">Vegan: No</p>
+                            <p class="mb-2 text-muted text-uppercase small">GMO: No</p>
+                            <p class="mb-3 text-muted text-uppercase small">MSG: No</p>
+                          </div>
+                          <div>
+                            <!--number of items in cart box-->
+                            <div class="def-number-input number-input safari_only mb-0 w-100">
+                              <input class="quantity" min="0" name="quantity" value="0" type="number">
+                            </div>
+                            <!--small text under number of items-->
+                            <small id="passwordHelpBlock" class="form-text text-muted text-center">
+                                (comes with white rice & soup of the day)
+                              </small>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <!--can get rid of?: remove item-->
+                            <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i
+                                class="fas fa-trash-alt mr-1"></i> Remove item?? </a>
+                          </div>
+                          <!--Price of item(s)-->
+                          <p class="mb-0"><span><strong>$35.99</strong></span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!--Item 3 Section:-->
+                  <hr class="mb-4">
+                  <div class="row mb-4">
+                    <div class="col-md-5 col-lg-3 col-xl-3">
+                      <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                        <!--Item 3 Image-->
+                        <img class="img-fluid w-100"
+                          src="https://lh3.googleusercontent.com/ThkZ2TdByrdZcLWgtPItl4awip0Hmbji5qWGGagwiLowLJMEauduH4ZiYtkCG2_yxFKZ_N11qtgbYUa7aV2nBwpbWcmzj5zc-F3mCxQfyaSi9nRBtvfLt2ZRPoszD2dIeecdVCaDf2tuk_qb_UFLBdGl1L4BJ-Hu0-0XvYvmj1d0CY_bcB-dvulK6-3t95iXwgd4CbRFFi8D0Y_HSRqeiOIhP286F_R0ILViEaKMZHoGnp2rgGgGKaJAfm79MAB9vtZZ5DHtc4E7pAFRxtLu_Bs2wujWxe6tX-Op-X4rfsREFpCqloBv9cUSv2p9ss6EnisQTgljjjzgPI-CThK-r1Owv_HyJEy9uahtjtTD9_Sre5_gsHQlNRKoMnk8qNnq9vlK1teBAqnKcN_mJ3XNH3Wim8Xfy37GgTBFRVIqKFQjQcQSjlopm7XexvO7_FmrlR8LiWMiICprc3bH8EmdgsaHjMCSARWbH3LHlj2t94s8zmkHQKkhCPZiNpThVdgqW27cy8vYdVrgsCtr3Gcwo3viIWtz-2EhMvQQhJooW5jQUCg7bswVWM22lCrT80qSXsDel7Jke3d1KpmX3juch6WXHgWQ-NE7DMYQpyx7J-kxTsRXpSG3qaT2xIR5oR46xM3LnyCD8RXto-VTayvc8oXxaI3miLORNPi3WkefuR-35_AkzJuk42kjcXxf=w672-h679-no?authuser=0" alt="General Tso's Chicken (vegan)">
+                        <a href="#!">
+                          <div class="mask waves-effect waves-light">
+                            <div class="mask rgba-black-slight waves-effect waves-light"></div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-7 col-lg-9 col-xl-9">
+                      <div>
+                        <div class="d-flex justify-content-between">
+                          <!--Name and characteristics-->
+                          <div>
+                            <h5>General Tso's Chicken (vegan)</h5>
+                            <p class="mb-3 text-muted text-uppercase small">Vegan: Yes</p>
+                            <p class="mb-2 text-muted text-uppercase small">GMO: No</p>
+                            <p class="mb-3 text-muted text-uppercase small">MSG: No</p>
+                          </div>
+                          <div>
+                            <!--number of items in cart box-->
+                            <div class="def-number-input number-input safari_only mb-0 w-100">
+                              <input class="quantity" min="0" name="quantity" value="0" type="number">
+                            </div>
+                            <!--small text under number of items-->
+                            <small id="passwordHelpBlock" class="form-text text-muted text-center">
+                                (comes with white rice & soup of the day)
+                              </small>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <!--can get rid of?: remove item-->
+                            <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i
+                                class="fas fa-trash-alt mr-1"></i> Remove item?? </a>
+                          </div>
+                          <!--Price of item(s)-->
+                          <p class="mb-0"><span><strong>$35.99</strong></span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!--Item 4 Section:-->
+                  <hr class="mb-4">
+                  <div class="row mb-4">
+                    <div class="col-md-5 col-lg-3 col-xl-3">
+                      <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                        <!--Item 4 Image-->
+                        <img class="img-fluid w-100"
+                          src="https://lh3.googleusercontent.com/KFGI8O_T0YvfxNA02xdX3-M4NHQOQ_CthM95s4uzJ_BVrZ1eadb_WOytx6WZy3xa08H-MToH1mQf6xFN6MFG5etQhqDfw5EXpSedqPQMvSyNHAbzE76oupHNKO1zZHevs12PtuJypWlJ-g9wVJJ7D4w6v4o3mQZ9_5NBL72qHFxJ15zHhS47_RR4EcUNpoO8TLHRecZLD2DIOI8snYpDBoyb59JaJTTltkPXLU73Co_isngxYvcojlo_DrcNueD39wzYy_JPhWOyFaos2Id3QhqRlQC24oxox9QWKw1fzZv-kY6aOOPU8JCUZ4bA726Gg9C7fvYOjV9crcXN9CWnYzhuimdEokGfRsecMEX1vsj_zjCmmMndQ3W5W2L2syj1fj0aEAgGWNKA2UnDVMm4OnIqy5VSnd0zkiT56iAKit11Q2VoDqFwY5_kUQl9vZ-da1fVDObJ2uoK1kSQHqgED790gyM9_Bqqmi262RZHvpwQZdr9aKmyhXBb_sffIHq0fS0gYVHJsmdXu1_FVNsXs7h8brdFDW2fx9pJuAy2XSTr64Snu56b5yN3bFt5BwNlkRfpywLzfWbpM9iLdtC438klvcWk11I9GcRn_wtys9MS2oDdKoYL13VspQm5fFLQci3h_UfHYX3DbgzF-I-ROb5DAluEjKAo9d-8DFS0WryJiwY-tuTLj1oojOpP=w885-h907-no?authuser=0" alt="Lo Mein">
+                        <a href="#!">
+                          <div class="mask waves-effect waves-light">
+                            <div class="mask rgba-black-slight waves-effect waves-light"></div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-7 col-lg-9 col-xl-9">
+                      <div>
+                        <div class="d-flex justify-content-between">
+                          <!--Name and characteristics-->
+                          <div>
+                            <h5>Lo Mein</h5>
+                            <p class="mb-3 text-muted text-uppercase small">Vegan: Yes</p>
+                            <p class="mb-2 text-muted text-uppercase small">GMO: No</p>
+                            <p class="mb-3 text-muted text-uppercase small">MSG: No</p>
+                          </div>
+                          <div>
+                            <!--number of items in cart box-->
+                            <div class="def-number-input number-input safari_only mb-0 w-100">
+                              <input class="quantity" min="0" name="quantity" value="0" type="number">
+                            </div>
+                            <!--small text under number of items-->
+                            <small id="passwordHelpBlock" class="form-text text-muted text-center">
+                                (comes with soup of the day)
+                              </small>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <!--can get rid of?: remove item-->
+                            <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i
+                                class="fas fa-trash-alt mr-1"></i> Remove item?? </a>
+                          </div>
+                          <!--Price of item(s)-->
+                          <p class="mb-0"><span><strong>$35.99</strong></span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--Item 5 Section:-->
+                  <hr class="mb-4">
+                  <div class="row mb-4">
+                    <div class="col-md-5 col-lg-3 col-xl-3">
+                      <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                        <!--Item 5 Image-->
+                        <img class="img-fluid w-100"
+                          src="https://lh3.googleusercontent.com/_KLJfPKSv33UuCOaBDxNt9G0f-nuAHx--SPBtxnxqolXsJlEerJTVWGvHjk_pQK7MuY7Jc4W70hCB71b9r3zHS09HPtUb_pQIsGlo2NEY4qDVd-11D6oAP9NujidGfkXHVp6GmGiEo_HIbbAzKagma8d91qxpV26BZ-Q1vHoFuk3RRYzXC9twdaQZib7ptB2PxYQHaqfjqAcbA5H2Qrasqv_0JLaYulcAmL-X2JFvzZ4qAmxHMUnIURNRVipJB0vh0PIaIjBKwAMiWB1A1P8Zy5qXuK3eyW-ZQJ4bxa3BvUzOL_57nw8UWxGhtOjUOWda1fQKCZ8f3CY5X4iMPBZM68oUEHlHHcPG_eMWdULAGr-zVqSZ8iqblF1MVomqy6q8Q1pJVS9BtEtL30FkcZjR5fSQTAJNeZO0M0M0rr7XNfuIySqAu2sgtIFfUS9kMD27qwhZmjS3rxT2fZICW26NxPrD1Lj66KLOlsFVnlFP39Ltuf4xepyeeUN-KcAjneyoAqRN0a1UWCAlyMjC0w_IeTRV-A1rKJAWZoRzIsfMsDNyb_kM3KQWFpdGOACREWDI34p14HgSRzOhqG_3w5l1IYiTp3SqfCFDP4qJyIGHuz0EHxrIuTePDf7VJfzqgYswQ2xX3yxqxtQec2-y3tJEkf28PzHQFw_cmJ7zGGVhae11Fc4RuOUUIDvJG0s=w224-h217-no?authuser=0" alt="Fried Rice">
+                        <a href="#!">
+                          <div class="mask waves-effect waves-light">
+                            <div class="mask rgba-black-slight waves-effect waves-light"></div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-7 col-lg-9 col-xl-9">
+                      <div>
+                        <div class="d-flex justify-content-between">
+                          <!--Name and characteristics-->
+                          <div>
+                            <h5>Fried Rice</h5>
+                            <p class="mb-3 text-muted text-uppercase small">Vegan: Yes</p>
+                            <p class="mb-2 text-muted text-uppercase small">GMO: No</p>
+                            <p class="mb-3 text-muted text-uppercase small">MSG: No</p>
+                          </div>
+                          <div>
+                            <!--number of items in cart box-->
+                            <div class="def-number-input number-input safari_only mb-0 w-100">
+                              <input class="quantity" min="0" name="quantity" value="0" type="number">
+                            </div>
+                            <!--small text under number of items-->
+                            <small id="passwordHelpBlock" class="form-text text-muted text-center">
+                                (comes with soup of the day)
+                              </small>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <!--can get rid of?: remove item-->
+                            <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i
+                                class="fas fa-trash-alt mr-1"></i> Remove item?? </a>
+                          </div>
+                          <!--Price of item(s)-->
+                          <p class="mb-0"><span><strong>$35.99</strong></span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--Item 6 Section:-->
+                  <hr class="mb-4">
+                  <div class="row mb-4">
+                    <div class="col-md-5 col-lg-3 col-xl-3">
+                      <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
+                        <!--Item 6 Image-->
+                        <img class="img-fluid w-100"
+                          src="https://lh3.googleusercontent.com/0-jBjXCERFvvDxK_4Q0g9i5dgGX_zkSPsiPE50e3E2PByadr8SdVcZfUGMy0GpTMeZc_3xyg707lif5mKIHOHPmasY9B_hadAxxRI3A7Jl9lJaKSpDhJNFRzFIkxMEnNS_7S2UM0le4iuNMPmOcH2kzS1GR58Bc-wv-8aTIscRvaSmcchZTuTDCuNOHjTjodpVIQC5i7JntusUJgMd-7nBQaPm-7PXOXJl4gzulChk__0EeyK8M9BRjdD1ufKXETLvJEsQiwQSO1ziJ1newcNxeRiUqn9yoQGzmvrjGY_gawIEbzPlnsKE8SIy83O0PuineCOmYspFSaTBe_vC7ywg-N_Zs0UDeiauYSp-GSxAFexSIQQS6GusJ9NXWA-oUc3bdhCEfs1Talzuzpze8dOb0XmIJYoToJcEH76gq0Q8fYAtvw9C8PKrpxS87VLI4_is73rKcZI_6SpmIHss7SLPIuffAuabjSZv5GABXEYmKOHhR2f-D0yJhdfPZRxUS0fOZcLO8Q6g7V4JaEj9lAXwzYri9dRIxd9w8reX0f6hUB2OCK7t8S7bd-MTYOVfy0iuQgSjAXWxxiWlZDA9WHSDvJsHFmyn4U2XUTSog8dML_kPCqdwa6JXbTlMbvwfqrrYAcg5enR1T1cx_-pECZu5dkMZPKgbnSzHCPpGH_0Oex5XyFPYrR0w3TpoA0=w465-h423-no?authuser=0" alt="Egg Rolls">
+                        <a href="#!">
+                          <div class="mask waves-effect waves-light">
+                            <div class="mask rgba-black-slight waves-effect waves-light"></div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-7 col-lg-9 col-xl-9">
+                      <div>
+                        <div class="d-flex justify-content-between">
+                          <!--Name and characteristics-->
+                          <div>
+                            <h5>Egg Rolls</h5>
+                            <p class="mb-3 text-muted text-uppercase small">Vegan: No</p>
+                            <p class="mb-2 text-muted text-uppercase small">GMO: No</p>
+                            <p class="mb-3 text-muted text-uppercase small">MSG: No</p>
+                          </div>
+                          <div>
+                            <!--number of items in cart box-->
+                            <div class="def-number-input number-input safari_only mb-0 w-100">
+                              <input class="quantity" min="0" name="quantity" value="0" type="number">
+                            </div>
+                            <!--small text under number of items-->
+                            <small id="passwordHelpBlock" class="form-text text-muted text-center">
+                                (comes with dipping sauce)
+                              </small>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <!--can get rid of?: remove item-->
+                            <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i
+                                class="fas fa-trash-alt mr-1"></i> Remove item?? </a>
+                          </div>
+                          <!--Price of item(s)-->
+                          <p class="mb-0"><span><strong>$35.99</strong></span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+        
+              <!-- Extra Info (bottom left)Box Section:-->
+              <div class="card mb-3">
+                <div class="card-body">
+                  <h5 class="mb-4">Expected cook time: 10-15 minutes</h5>
+                  <h5 class="mb-4">We accept:</h5>
+        
+                  <img class="mr-2" width="45px"
+                    src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg" alt="Visa">
+                  <img class="mr-2" width="45px"
+                    src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg" alt="Mastercard">
+                  <img class="mr-2" width="45px"
+                    src="https://toppng.com/uploads/preview/we-accept-debit-cards-with-visa-and-mastercard-logos-discover-vector-logo-2018-11563046028emfhv7fpp2.png" alt="PayPal acceptance mark">
+                  <img class="mr-2" width="45px"
+                    src="https://mdbootstrap.com/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg" alt="American Express">
+                </div>
+              </div>
+        
+            </div>
+
+            
+            <!-- Price Calculation (top right)Box Section:-->
+            <div class="col-lg-4">
+        
+              <!--Price Caculation Section:-->
+              <div class="card mb-3">
+                <div class="card-body">
+                  <h5 class="mb-3">Price Calculation</h5>
+        
+                  <ul class="list-group list-group-flush">
+                    <!--pretax amount-->
+                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                      Temporary amount:
+                      <span>$25.98</span>
+                    </li>
+                    <!--tax-->
+                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                      Tax:
+                      <span>$2</span>
+                    </li>
+                    <!--with tax anount-->
+                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                      <div>
+                        <strong>Total amount of:</strong>
+                      </div>
+                      <span><strong>$53.98</strong></span>
+                    </li>
+                  </ul>
+                  <!--checkout button-->
+                  <button type="button" class="btn btn-primary btn-block waves-effect waves-light">checkout</button>
+        
+                </div>
+              </div>
+        
+              <!-- COVID Clause Section: -->
+              <div class="card mb-3">
+                <div class="card-body">
+                  <p class="text-primary mb-0"><i class="fas fa-info-circle mr-1"></i> Due to COVID-19 precautions, only 5 customers allowed inside the store at a time (please wear mask). For curbside pickup, call when you arrive and we will bring it out to you. Thank you!</p>
+                </div>
+              </div>        
+            </div>
+        
+          </div>        
+        </section>
+        <!--End of cart section-->
+
+
         <!-- home button -->
         <br>
-        <a href="https://cswok.herokuapp.com/" class="button"> Back to Home Page </a>
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
-        
+        <a href="index.html" class="button"> Back to Home Page </a>
     </body>
 
 </html>
