@@ -11,7 +11,8 @@ const Menu = require('./menu.js');
 app.use(bodyParser.json());
 
 app.get('/menu', (req, res) => {
-    res.json(Item.getAllIDs());
+    // res.json(Item.getAllIDs());
+    res.json(Item.getAllNames());
     return;
 });
 

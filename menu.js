@@ -21,6 +21,10 @@ Menu.getAllIDs = () => {
     // Return an array of item ids
     return Object.keys(menu_data.data).map((id => {return parseInt(id);}));
 }
+Menu.getAllNames = () => {
+    // Return an array of item ids
+    return Object.keys(menu_data.data).map((id => {return id}));
+}
 
 Menu.findByID = (id) => {
     let mdata = menu_data.get(id);
