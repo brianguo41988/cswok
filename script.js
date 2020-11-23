@@ -1,14 +1,14 @@
-async function replySubmit(number){
-    console.log(number);
+async function chickenBro(number, name){
     const result = await axios({	
         method: 'post',	
         url: 'https://cswok.herokuapp.com/menu',	
         withCredentials: true,	
         data: {	
-          "name": "Chuicke Brocili",	
-          "price": 4.50	
+          "name": `${name}`,	
+          "price": `${number}`
         },	
       });	
+
 }
 
 async function fn1() {
