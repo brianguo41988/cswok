@@ -53,16 +53,14 @@ for (let i = 0; i < result.data.length; i++){
     withCredentials: true,	
 });	
 if (result2.data.menu == true){
-    total += parseInt(result2.data.price);
+    total += parseFloat(result2.data.price);
   } 
 }
 let tax = total * 0.07;
-total = total * 1.0000000001;
-console.log(total);
-total.toFixed(2);
-console.log(total);
+// total = parseFloat(total);
+// console.log(total);
 tax = tax.toFixed(2);
-let ordertotal = tax + total;
+let ordertotal = parseFloat(tax) + parseFloat(total);
 
 $('#cardBody').append(`<h5 class="mb-3">Price Calculation</h5>
         <ul class="list-group list-group-flush">
