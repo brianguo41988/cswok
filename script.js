@@ -1,3 +1,5 @@
+$( document ).ready(refreshCart());
+
 async function postFn(number, name){
     const result = await axios({	
         method: 'post',	
