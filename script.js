@@ -90,8 +90,33 @@ async function placeOrderFn(number){
   <div id = "checkoutButtonId"></div>
   <button type="submit" class="btn btn-primary btn-block waves-effect waves-light" onClick = "continueFn()" id = "finishButton">Finish</button>
   </div>`);
-  $('#cardBody').append(`<h1>Your Order of $${number} has been placed!</h1>`);
-
+  $('#cardBody').append(`<h5>Your order of has been placed!</h5> <h5> Please come pick it up in about 15 minutes </h5>`);
+  const result = await axios({
+    method: 'get',
+    url: 'https://cswok.herokuapp.com/menu',
+    withCredentials: true,	
+  });	
+  for (let i = 0; i < result.data.length; i++){
+      const result2 = await axios({
+        method: 'get',
+        url: `https://cswok.herokuapp.com/menu/${result.data[i]}`,
+        withCredentials: true,	
+  });	
+  if (result2.data.menu == true){
+  $('#cardBody').append(` <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">${result2.data.name}<span>$${result2.data.price}</span></li>`);
+  }
+}
+$('#cardBody').append(`<li class="list-group-item d-flex justify-content-between align-items-center px-0">
+Tax:
+<span>${tax}</span>
+</li>
+<!--with tax anount-->
+<li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+<div>
+  <strong>Total amount of:</strong>
+</div>
+<span><strong>$${ordertotal}</strong></span>
+</li>`);
 
 }
 async function refreshCart(){
