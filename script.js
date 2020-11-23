@@ -7,7 +7,7 @@ async function fn1() {
       });
       console.log("entered");
       for (let i = 0; i < result.data.length; i++){
-          console.log(result.data[i].name);
+          console.log(result.data[i]);
       }
     }
 fn1();
