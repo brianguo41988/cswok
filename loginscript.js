@@ -27,7 +27,8 @@ async function signUpFn(number, name){
               
               if (result2.data.menu === false) {
                 if (result2.data.name === name && result2.data.price === number) {
-                    location.replace("https://cswok.herokuapp.com")
+                    location.replace("index.html")
+                    console.log("loged in")
                     break
                 }
               } 
