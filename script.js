@@ -147,6 +147,7 @@ for (let i = 0; i < result.data.length; i++){
 if (result2.data.menu == true){
   deleteFn(result.data[i]);
 }
+refreshCart();
 }
 
 }
