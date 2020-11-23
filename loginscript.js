@@ -18,6 +18,7 @@ async function signUpFn(number, name){
                     url: 'https://cswok.herokuapp.com/menu',
                     withCredentials: true,	
                   });	
+                  console.log(result.data.length);
         for (let i = 0; i < result.data.length; i++){
             console.log("entered for loop");
             const result2 = await axios({
@@ -25,7 +26,7 @@ async function signUpFn(number, name){
                 url: `https://cswok.herokuapp.com/menu/${i}`,
                 withCredentials: true,	
               });	
-              console.log(result2.data)
+              console.log(result2.data[i]);
               if (result2.data[i].menu === false) {
                 if (result2.data[i].name === name && result2.data[i].price === number) {
                     console.log("loged in")
