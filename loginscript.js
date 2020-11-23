@@ -28,8 +28,8 @@ async function signUpFn(number, name){
               if (result2.data[i].menu === false) {
                 if (result2.data[i].name === name && result2.data[i].price === number) {
                     console.log("loged in")
-                    location.replace("index.html")
-                    break
+                    // location.replace("index.html")
+                    // break
                 }
               } 
               
