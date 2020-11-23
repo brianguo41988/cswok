@@ -15,7 +15,7 @@ app.get('/menu', (req, res) => {
     return;
 });
 
-app.get('/', function (req, res) {
+  app.get('/', function (req, res) {
     res.sendfile(__dirname + '/index.html');
   });
 
@@ -46,6 +46,9 @@ app.get('/menu/:id', (req, res) => {
     }
     res.json(x);
 } );
+app.get('/loginscript.js', function (req, res) {
+  res.sendfile(__dirname + '/loginscript.js');
+});
 
 app.post('/menu', (req, res)=> {
     let {name, price} = req.body;
