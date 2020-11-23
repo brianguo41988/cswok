@@ -1,5 +1,5 @@
-$( document ).ready(refreshCart);
-
+$( document ).ready(refreshCart());
+$( document ).ready(checkoutFn());
 async function postFn(number, name){
     const result = await axios({	
         method: 'post',	
@@ -135,23 +135,26 @@ async function finishFn(){
 
 </div>
 </div>`);
-const result = await axios({
-  method: 'get',
-  url: 'https://cswok.herokuapp.com/menu',
-  withCredentials: true,	
-});	
-for (let i = 0; i < result.data.length; i++){
-    const result2 = await axios({
-      method: 'get',
-      url: `https://cswok.herokuapp.com/menu/${result.data[i]}`,
-      withCredentials: true,	
-});	
-if (result2.data.menu == true){
-  deleteFn(result.data[i]);
-}
-refreshCart();
+
 }
 
+async function clearCart(){
+  const result = await axios({
+    method: 'get',
+    url: 'https://cswok.herokuapp.com/menu',
+    withCredentials: true,	
+  });	
+  for (let i = 0; i < result.data.length; i++){
+      const result2 = await axios({
+        method: 'get',
+        url: `https://cswok.herokuapp.com/menu/${result.data[i]}`,
+        withCredentials: true,	
+  });	
+  if (result2.data.menu == true){
+    deleteFn(result.data[i]);
+  }
+  refreshCart();
+  }
 }
 async function refreshCart(){
     $('#cartRoot').remove();
