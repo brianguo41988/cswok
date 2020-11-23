@@ -59,7 +59,7 @@ if (result2.data.menu == true){
 let tax = total * 0.07;
 tax = tax.toFixed(2);
 let ordertotal = parseFloat(tax) + parseFloat(total);
-$('#checkOutButton').replaceWith(`<button type="submit" class="btn btn-primary btn-block waves-effect waves-light" onClick = "placeOrderFn()" id = "placeOrderButton">Place Order</button>`);
+$('#checkOutButton').replaceWith(`<button type="submit" class="btn btn-primary btn-block waves-effect waves-light" onClick = "placeOrderFn(${ordertotal})" id = "placeOrderButton">Place Order</button>`);
 $('#cardBody').append(`<h5 class="mb-3">Price</h5>
         <ul class="list-group list-group-flush">
   <!--pretax amount-->
@@ -82,7 +82,7 @@ $('#cardBody').append(`<h5 class="mb-3">Price</h5>
 </ul>`);
 }
 
-async function placeOrderFn(){
+async function placeOrderFn(number){
   $('#cardBody').remove();
   $('#upperCardBody').append(` 
   <div class="card-body" id = "cardBody">
@@ -90,6 +90,8 @@ async function placeOrderFn(){
   <div id = "checkoutButtonId"></div>
   <button type="submit" class="btn btn-primary btn-block waves-effect waves-light" onClick = "continueFn()" id = "finishButton">Finish</button>
   </div>`);
+  $('#cardBody').append(`<h1>Your Order of $${number} has been placed!</h1>`);
+
 
 }
 async function refreshCart(){
