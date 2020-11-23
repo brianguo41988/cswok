@@ -22,7 +22,7 @@ var urlString = window.location.href;
 console.log(urlString);
 urlParams = parseURLParams(urlString);
 console.log(urlParams);
-console.log(urlParams.myCountry)
+console.log(urlParams.myCountry[0]);
 
 if (urlParams.myCountry[0] == "Chicken and Broccoli") {
     $('#searchRoot').append(`<div class="single-menu">
