@@ -8,7 +8,9 @@ async function postFn(number, name){
           "price": `${number}`
         },	
       });	
+      console.log(name + " has been clicked");
       if (name == "Chicken Broccoli"){
+        console.log("I have entered the if");
         $('#root').append(` <!--Item 1 Section:-->
         <div class="row mb-4">
           <div class="col-md-5 col-lg-3 col-xl-3">
