@@ -30,8 +30,8 @@ async function signUpFn(number, name){
               if (result2.data.menu === false) {
                 if (result2.data.name === name && result2.data.price === number) {
                     console.log("logged in")
-                    // location.replace("index.html")
-                    // break
+                    location.replace("index.html")
+                    break
                 }
               } 
               console.log("failed to sign in")
