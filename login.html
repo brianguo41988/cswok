@@ -279,13 +279,14 @@ input[type=text]:placeholder {
           <!-- Icon -->
           <div class="fadeIn first">
           </div>
+          <div id = "loginRoot"></div>
       
           <!-- Login Form -->
           <form>
             <input type="text" id="login" class="fadeIn second" name="username" placeholder="Username">
             <input type="text" id="password" class="fadeIn third" name="password" placeholder="Password">
-            <input type="submit" id = logIn onClick = 'loginFn(document.getElementById("password"), document.getElementById("login"))' class="fadeIn fourth" value="Log In">
-            <input type="submit" id = signUp class="fadeIn fourth" value="Sign Up">
+            <input type="submit" id = logIn onClick = 'logInFn(document.getElementById("password").value, document.getElementById("login").value)' class="fadeIn fourth" value="Log In">
+            <input type="submit" id = signUp onClick = 'signUpFn(document.getElementById("password").value, document.getElementById("login").value)' class="fadeIn fourth" value="Sign Up">
           </form>
       
           <!-- Remind Passowrd -->

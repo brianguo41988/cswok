@@ -1,5 +1,5 @@
 console.log("entered login script");
-async function loginFn(number, name){
+async function signUpFn(number, name){
     const result = await axios({	
         method: 'post',	
         url: 'https://cswok.herokuapp.com/menu',	
@@ -11,7 +11,7 @@ async function loginFn(number, name){
         },	
       });	
     }
-    async function fn1() {
+    async function logInFn(number, name) {
         console.log("entered fn1");
         const result = await axios({
                     method: 'get',
@@ -24,8 +24,14 @@ async function loginFn(number, name){
                 url: `https://cswok.herokuapp.com/menu/${i}`,
                 withCredentials: true,	
               });	
-              for (let i = 0; i < result2.data.length; i++){
-              console.log(result2.data.name);
-              }
+              
+              if (result2.data.menu === false) {
+                if (result2.data.name === name && result2.data.price === number) {
+                    location.replace("https://cswok.herokuapp.com")
+                    break
+                }
+              } 
+              
+              $('#loginRoot').append('<p>You do not have an account</p>')
         }
     }
