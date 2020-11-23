@@ -35,6 +35,6 @@ async function replySubmit(number){
         data: {
           "name": "Sweet Sour Chicken",
           "price": 8
-        },
+        }
       });
 }
