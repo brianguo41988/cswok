@@ -14,7 +14,7 @@ app.get('/menu', (req, res) => {
     res.json(Item.getAllIDs());
     return;
 });
-app.get('/menu2', (req, res) => {
+app.get('/menutwo', (req, res) => {
     console.log(menu_data.length())
     res.json(menu_data.length);
     return;
