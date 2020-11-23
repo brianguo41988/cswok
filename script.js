@@ -83,10 +83,6 @@ async function refreshCart(){
                       <p class="mb-3 text-muted text-uppercase small">MSG: No</p>
                     </div>
                     <div>
-                      <!--number of items in cart box-->
-                      <div class="def-number-input number-input safari_only mb-0 w-100">  
-                        <input class="quantity" min="0" name="quantity" value="0" type="number">
-                      </div>
                       <!--small text under under of items-->
                       <small id="passwordHelpBlock" class="form-text text-muted text-center">
                         (comes with white rice & soup of the day)
@@ -99,7 +95,7 @@ async function refreshCart(){
                           <button type = "submit" onClick = "deleteFn(${result.data[i]})"> Remove </button>
                     </div>
                     <!--Price of item(s)-->
-                    <p class="mb-0"><span><strong>$17.99</strong></span></p>
+                    <p class="mb-0"><span><strong>$9.00</strong></span></p>
                   </div>
                 </div>
               </div>
@@ -132,7 +128,6 @@ async function refreshCart(){
                       <p class="mb-3 text-muted text-uppercase small">MSG: No</p>
                     </div>
                     <div>
-                      <!--number of items in cart box-->
                       <!--small text under number of items-->
                       <small id="passwordHelpBlock" class="form-text text-muted text-center">
                           (comes with white rice & soup of the day)
@@ -145,7 +140,7 @@ async function refreshCart(){
                       <button type = "submit" onClick = "deleteFn(${result.data[i]})"> Remove </button>
                     </div>
                     <!--Price of item(s)-->
-                    <p class="mb-0"><span><strong>$35.99</strong></span></p>
+                    <p class="mb-0"><span><strong>$8.00</strong></span></p>
                   </div>
                 </div>
               </div>
@@ -225,10 +220,6 @@ async function refreshCart(){
                       <p class="mb-3 text-muted text-uppercase small">MSG: No</p>
                     </div>
                     <div>
-                      <!--number of items in cart box-->
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity" min="0" name="quantity" value="0" type="number">
-                      </div>
                       <!--small text under number of items-->
                       <small id="passwordHelpBlock" class="form-text text-muted text-center">
                           (comes with soup of the day)
@@ -241,7 +232,7 @@ async function refreshCart(){
                       <button type = "submit" onClick = "deleteFn(${result.data[i]})"> Remove </button>
                     </div>
                     <!--Price of item(s)-->
-                    <p class="mb-0"><span><strong>$35.99</strong></span></p>
+                    <p class="mb-0"><span><strong>$5.00</strong></span></p>
                   </div>
                 </div>
               </div>
@@ -273,10 +264,6 @@ async function refreshCart(){
                       <p class="mb-3 text-muted text-uppercase small">MSG: No</p>
                     </div>
                     <div>
-                      <!--number of items in cart box-->
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity" min="0" name="quantity" value="0" type="number">
-                      </div>
                       <!--small text under number of items-->
                       <small id="passwordHelpBlock" class="form-text text-muted text-center">
                           (comes with soup of the day)
@@ -289,7 +276,7 @@ async function refreshCart(){
                       <button type = "submit" onClick = "deleteFn(${result.data[i]})"> Remove </button>
                     </div>
                     <!--Price of item(s)-->
-                    <p class="mb-0"><span><strong>$35.99</strong></span></p>
+                    <p class="mb-0"><span><strong>$5.00</strong></span></p>
                   </div>
                 </div>
               </div>
@@ -321,10 +308,6 @@ async function refreshCart(){
                       <p class="mb-3 text-muted text-uppercase small">MSG: No</p>
                     </div>
                     <div>
-                      <!--number of items in cart box-->
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity" min="0" name="quantity" value="0" type="number">
-                      </div>
                       <!--small text under number of items-->
                       <small id="passwordHelpBlock" class="form-text text-muted text-center">
                           (comes with dipping sauce)
@@ -337,7 +320,7 @@ async function refreshCart(){
                       <button type = "submit" onClick = "deleteFn(${result.data[i]})"> Remove </button>
                     </div>
                     <!--Price of item(s)-->
-                    <p class="mb-0"><span><strong>$35.99</strong></span></p>
+                    <p class="mb-0"><span><strong>$3.00</strong></span></p>
                   </div>
                 </div>
               </div>
