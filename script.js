@@ -38,7 +38,7 @@ async function fn1() {
     // console.log(number + "number");
   }
 async function checkoutFn(){
-  let total = 0;
+  let total = 0.0;
   const result = await axios({
     method: 'get',
     url: 'https://cswok.herokuapp.com/menu',
@@ -53,7 +53,7 @@ for (let i = 0; i < result.data.length; i++){
     withCredentials: true,	
 });	
 if (result2.data.menu == true){
-    total += result2.data.price;
+    total += parseInt(result2.data.price);
   } 
 }
 let tax = total * 0.07;
