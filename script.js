@@ -44,7 +44,21 @@ async function fn3() {
           });
         }
         fn3();
+console.log("it worked?");
+async function fn5() {
+    const result = await axios({
+        method: 'post',
+        url: 'https://cswok.herokuapp.com/menu',
+        withCredentials: true,
+        data: {
+          "name": "Chuicke Brocili",
+          "price": 4.50
+        },
+      });
+    }
+        fn3();
         fn4();
+        fn5();
 // const Menu = require("./menu");
 
 // const Menu = require("./menu");
