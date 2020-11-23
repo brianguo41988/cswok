@@ -1,4 +1,4 @@
-async function chickenBro(number, name){
+async function postFn(number, name){
     const result = await axios({	
         method: 'post',	
         url: 'https://cswok.herokuapp.com/menu',	
