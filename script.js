@@ -296,6 +296,7 @@ async function refreshCart(){
               </div>
             </div>`);
         }else if (result2.data.name == "Egg roll"){
+          console.log("entered eggroll");
             $('#cartRoot').append(`<!--Item 6 Section:-->
             <hr class="mb-4">
             <div class="row mb-4">
