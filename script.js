@@ -88,7 +88,7 @@ async function placeOrderFn(ordertotal, tax, total){
   <div class="card-body" id = "cardBody">
   <!--checkout button-->
   <div id = "checkoutButtonId"></div>
-  <button type="submit" class="btn btn-primary btn-block waves-effect waves-light" onClick = "continueFn()" id = "finishButton">Finish</button>
+  <button type="submit" class="btn btn-primary btn-block waves-effect waves-light" onClick = "finishFn()" id = "finishButton">Finish</button>
   </div>`);
   $('#cardBody').append(`<h5>Your order of has been placed!</h5> <h5> Please come pick it up in about 15 minutes </h5>`);
   const result = await axios({
@@ -122,6 +122,17 @@ Tax:
 </div>
 <span><strong>$${ordertotal}</strong></span>
 </li>`);
+
+}
+async function finishFn(){
+  $('#cardBody').remove();
+  $('#upperCardBody').append(`               <div class="card-body" id = "cardBody">
+  <!--checkout button-->
+  <div id = "checkoutButtonId"></div>
+  <button type="submit" class="btn btn-primary btn-block waves-effect waves-light" onClick = "checkoutFn()" id = "checkOutButton">checkout</button>
+
+</div>
+</div>`);
 
 }
 async function refreshCart(){
