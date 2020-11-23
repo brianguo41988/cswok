@@ -1,4 +1,7 @@
 let Items = [
+    "cat",
+    "chicken",
+    "these thighs"
     ];
     
     $('#form-autocomplete-4').mdbAutocomplete({
