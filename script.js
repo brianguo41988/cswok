@@ -133,9 +133,6 @@ async function refreshCart(){
                     </div>
                     <div>
                       <!--number of items in cart box-->
-                      <div class="def-number-input number-input safari_only mb-0 w-100">
-                        <input class="quantity" min="0" name="quantity" value="0" type="number">
-                      </div>
                       <!--small text under number of items-->
                       <small id="passwordHelpBlock" class="form-text text-muted text-center">
                           (comes with white rice & soup of the day)
