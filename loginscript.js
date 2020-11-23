@@ -10,7 +10,7 @@ async function signUpFn(number, name){
           "menu": false
         },	
       });	
-      window.location.href = `https://cswok.herokuapp.com/login`;
+      window.location.href = `https://cswok.herokuapp.com/login.html`;
     }
     async function logInFn(number, name) {
         console.log("entered fn1");
@@ -24,7 +24,7 @@ async function signUpFn(number, name){
             console.log("entered for loop");
             const result2 = await axios({
                 method: 'get',
-                url: `https://cswok.herokuapp.com/menu/${i}`,
+                url: `https://cswok.herokuapp.com/menu/${result.data[i]}`,
                 withCredentials: true,	
               });	
               console.log(result2.data);
