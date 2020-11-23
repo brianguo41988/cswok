@@ -126,13 +126,28 @@ Tax:
 }
 async function finishFn(){
   $('#cardBody').remove();
-  $('#upperCardBody').append(`               <div class="card-body" id = "cardBody">
+  $('#upperCardBody').append(`<div class="card-body" id = "cardBody">
   <!--checkout button-->
   <div id = "checkoutButtonId"></div>
   <button type="submit" class="btn btn-primary btn-block waves-effect waves-light" onClick = "checkoutFn()" id = "checkOutButton">checkout</button>
 
 </div>
 </div>`);
+const result = await axios({
+  method: 'get',
+  url: 'https://cswok.herokuapp.com/menu',
+  withCredentials: true,	
+});	
+for (let i = 0; i < result.data.length; i++){
+    const result2 = await axios({
+      method: 'get',
+      url: `https://cswok.herokuapp.com/menu/${result.data[i]}`,
+      withCredentials: true,	
+});	
+if (result2.data.menu == true){
+  deleteFn(result.data[i]);
+}
+}
 
 }
 async function refreshCart(){
