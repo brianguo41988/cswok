@@ -11,6 +11,9 @@ async function signUpFn(number, name){
         },	
       });	
       window.location.href = `https://cswok.herokuapp.com/login.html`;
+      $('#loginRoot').remove();
+      $('#loginlogin').append('<div id = "loginRoot"></div>');
+      $('#loginRoot').append('<p>Account Made! Please Log in.</p>');
     }
     async function logInFn(number, name) {
         console.log("entered fn1");
@@ -36,6 +39,13 @@ async function signUpFn(number, name){
                 }
               } 
               console.log("failed to sign in")
-              $('#loginRoot').append('<p>Incorrect username or password</p>')
+              $('#loginRoot').remove();
+              $('#loginlogin').append('<div id = "loginRoot"></div>');
+              $('#loginRoot').append('<p>Incorrect username or password</p>');
+        }
+        if (result.data.length == 0){
+          $('#loginRoot').remove();
+          $('#loginlogin').append('<div id = "loginRoot"></div>');
+          $('#loginRoot').append('<p>Incorrect username or password</p>');
         }
     }
