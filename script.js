@@ -62,10 +62,7 @@ tax = tax.toFixed(2);
 let ordertotal = parseFloat(tax) + parseFloat(total);
 $('#cardBody').remove();
 $('#upperCardBody').append(`<div class="card-body" id = "cardBody"></div>`)
-$('#cardBody').append(`            <!-- Price Calculation (top right)Box Section:-->
-<div class="col-lg-4">
-
-  <!--Price Caculation Section:-->
+$('#cardBody').append(`<!--Price Caculation Section:-->
   <div class="card mb-3">
     <div class="card-body">
       <h5 class="mb-3">Price Calculation</h5>
