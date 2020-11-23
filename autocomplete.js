@@ -24,7 +24,7 @@ urlParams = parseURLParams(urlString);
 console.log(urlParams);
 console.log(urlParams.myCountry)
 
-if (urlParams.myCountry === "chicken and Broccoli") {
+if (urlParams.myCountry === "Chicken and Broccoli") {
     $('#searchRoot').append(`<div class="single-menu">
     <img src="https://static.toiimg.com/photo/msid-67586673/67586673.jpg?3918697" alt="Item1" width="200" height="40">
     <div class="menu-content">
