@@ -57,9 +57,11 @@ if (result2.data.menu == true){
   } 
 }
 let tax = total * 0.07;
-tax = tax.toFixed();
-let ordertotal = tax + total;
-// ordertotal = ordertotal.toFixed();
+tax = tax.toFixed(2);
+console.log(tax);
+console.log(total);
+let ordertotal = parseInt(tax) + parseInt(total);
+
 $('#cardBody').append(`<h5 class="mb-3">Price Calculation</h5>
         <ul class="list-group list-group-flush">
   <!--pretax amount-->
