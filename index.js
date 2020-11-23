@@ -71,6 +71,7 @@ app.put('/menu/:id', (req, res) => {
     let {name, price} = req.body;
     b.name = name;
     b.price = price;
+    b.menu = menu;
     b.update();
 
     res.json(b);

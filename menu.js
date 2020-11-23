@@ -2,10 +2,11 @@ const menu_data = require('data-store')({ path: process.cwd() + '/data/menu.json
 
 class Menu {
 
-    constructor (id, name, price) {
+    constructor (id, name, price, menu) {
         this.id = id;
         this.name = name;
         this.price = price;
+        this.menu = menu;
     }
 
     update () {

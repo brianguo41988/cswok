@@ -5,7 +5,8 @@ async function postFn(number, name){
         withCredentials: true,	
         data: {	
           "name": `${name}`,	
-          "price": `${number}`
+          "price": `${number}`,
+          "menu": true
         },	
       });	
     }
@@ -42,6 +43,7 @@ async function refreshCart(){
         url: `https://cswok.herokuapp.com/menu/${i}`,
         withCredentials: true,	
     });	
+    if (result2.data.menu == false){
         if (result2.data.name == "Chicken Broccoli"){
             $('#cartRoot').append(` <!--Item 1 Section:-->
             <div class="row mb-4">
@@ -337,5 +339,6 @@ async function refreshCart(){
               </div>
             </div>`);
         }
+      }
     }
 }
