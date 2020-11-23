@@ -26,15 +26,15 @@ async function signUpFn(number, name){
                 url: `https://cswok.herokuapp.com/menu/${i}`,
                 withCredentials: true,	
               });	
-              console.log(result2.data[i]);
-              if (result2.data[i].menu === false) {
-                if (result2.data[i].name === name && result2.data[i].price === number) {
-                    console.log("loged in")
-                    // location.replace("index.html")
-                    // break
+              console.log(result2.data);
+              if (result2.data.menu === false) {
+                if (result2.data.name === name && result2.data.price === number) {
+                    console.log("logged in")
+                    location.replace("index.html")
+                    break
                 }
               } 
-              
+              console.log("failed to sign in")
               $('#loginRoot').append('<p>You do not have an account</p>')
         }
     }
