@@ -28,5 +28,13 @@ fn1();
 // let m1 = new Menu (9,"chicken" , 1.20);
 // menu_data.set(m1.id.toString(), m1);
 async function replySubmit(number){
-console.log(number);
+    const result = await axios({
+        method: 'post',
+        url: 'https://cswok.herokuapp.com/menu',
+        withCredentials: true,
+        data: {
+          "name": "Sweet Sour Chicken",
+          "price": 8
+        },
+      });
 }
