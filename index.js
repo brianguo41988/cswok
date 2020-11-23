@@ -34,6 +34,9 @@ app.get('/', function (req, res) {
   app.get('/contactus.html', function (req, res) {
     res.sendfile(__dirname + '/contactus.html');
   });
+  app.get('/index.html', function (req, res) {
+    res.sendfile(__dirname + '/index.html');
+  });
   app.get('/menu.html', function (req, res) {
     res.sendfile(__dirname + '/menu.html');
   });
