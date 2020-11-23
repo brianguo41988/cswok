@@ -97,7 +97,7 @@ $('#cardBody').append(`<!--Price Caculation Section:-->
 async function placeOrderFn(ordertotal, tax, total){
   $('#cardBody').remove();
   $('#upperCardBody').append(`<div class="card-body" id = "cardBody"></div>`)
-  $('#cardBody').append(`<div class="card mb-3"><div class="card-body"><h5>Your order has been placed!</h5> <h5 id = "boxCalc"> Please come pick it up in about 15 minutes </h5></div></div>`);
+  $('#cardBody').append(`<div class="card mb-3"><div class="card-body"><strong><h5>Your order has been placed!</h5></strong> <strong><h5 id = "boxCalc"> Please come pick it up in about 15 minutes </h5></strong></div></div>`);
   const result = await axios({
     method: 'get',
     url: 'https://cswok.herokuapp.com/menu',
