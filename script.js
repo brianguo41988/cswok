@@ -8,7 +8,7 @@ async function postFn(number, name){
           "price": `${number}`
         },	
       });	
-
+    }
 async function fn1() {
     console.log("entered fn1");
     const result = await axios({
