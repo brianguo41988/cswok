@@ -1,5 +1,4 @@
 $( document ).ready(refreshCart());
-$( document ).ready(checkoutFn());
 async function postFn(number, name){
     const result = await axios({	
         method: 'post',	
@@ -443,4 +442,5 @@ async function refreshCart(){
         }
       }
     }
+    checkoutFn();
 }
