@@ -37,7 +37,7 @@ app.get('/autocomplete.js', function (req, res) {
   });
   app.get('/menu.html', function (req, res) {
     res.sendfile(__dirname + '/menu.html');
-  });
+  }); 
   app.get('/cart.html', function (req, res) {
     res.sendfile(__dirname + '/cart.html');
   });
