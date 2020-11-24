@@ -19,7 +19,7 @@ async function fn1() {
                 withCredentials: true,	
               });	
     for (let i = 0; i < result.data.length; i++){
-        const result2 = await axios({  
+        const result2 = await axios({    
             method: 'get',
             url: `https://cswok.herokuapp.com/menu/${i}`,
             withCredentials: true,	
