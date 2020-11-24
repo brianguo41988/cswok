@@ -24,7 +24,7 @@ async function fn1() {
             url: `https://cswok.herokuapp.com/menu/${i}`,
             withCredentials: true,	
           });	
-          console.log(result2);
+          console.log(result2); 
     }
 }
 
