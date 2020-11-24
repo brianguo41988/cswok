@@ -8,7 +8,7 @@ class Menu {
         this.price = price;
         this.menu = menu;
     }
-
+ 
     update () {
         menu_data.set(this.id.toString(), this);
     }
