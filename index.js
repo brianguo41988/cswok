@@ -44,6 +44,9 @@ app.get('/autocomplete.js', function (req, res) {
   app.get('/script.js', function (req, res) {
     res.sendfile(__dirname + '/script.js');
   });
+  app.get('/signup.html', function (req, res) {
+    res.sendfile(__dirname + '/signup.html');
+  });
 app.get('/menu/:id', (req, res) => {
     let x = Item.findByID(req.params.id);
     if (x == null) {
